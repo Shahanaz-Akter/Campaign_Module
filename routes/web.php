@@ -18,6 +18,9 @@ Route::get('/example', function () {
 Route::get('/email_campaigns', function () {
     return view('Campaigns.email_campaigns');
 });
+Route::get('/create_campaign', function () {
+    return view('Campaigns.create_campaign');
+});
 Route::get('/social_campaigns', function () {
     return view('Campaigns.social_campaigns');
 });
