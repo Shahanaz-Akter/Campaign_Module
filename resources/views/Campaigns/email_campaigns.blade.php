@@ -23,6 +23,13 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
     <!-- Examples -->
     <div class="row mb-5">
 
@@ -43,7 +50,7 @@
         <div class="col-md-4 col-lg-4 mb-3">
             <div class="card h-100 text-center">
                 <div class="card-body">
-                    <h5 class="card-title"><b> Email</b></h5>
+                    <h5 class="card-title"><b> not Regular Email</b></h5>
 
                 </div>
                 <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" />

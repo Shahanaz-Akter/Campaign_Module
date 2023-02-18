@@ -118,6 +118,18 @@
     .camp:hover {
         color: #ef7615;
     }
+
+   
+
+    .all_camp{
+        transition: width 1s, height 1s;
+        transition-timing-function: ease-in;
+    }
+    .all_campaign :hover{
+        cursor: pointer;
+        transition: all 1s ease-in;
+        transform: scale(1.1);
+    }
 </style>
 </head>
 
@@ -280,6 +292,24 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
