@@ -11,6 +11,10 @@
     <link rel="canonical" href="https://1.envato.market/frest_admin">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
+
+<!-- slider css link -->
+<link rel="stylesheet" href="{{asset('assets/vendor/libs/nouislider/nouislider.css')}}" />
+
     <!-- Modal Examples CSS Link-->
     <link rel="stylesheet" href="{{asset('vendor/libs/animate-css/animate.css')}}"> 
     <!-- Fonts -->
@@ -32,17 +36,17 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/apex-charts/apex-charts.css')}}" />
   
+    <!-- Select2 class link -->
     <link rel="stylesheet" href="{{asset('assets/vendor/libs/select2/select2.css')}} " />  
     <link rel="stylesheet" href="{{asset('../../assets/vendor/libs/dropzone/dropzone.css')}}" />
+
     <!-- Page CSS -->
     <!-- Tagigy css -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/tagify/tagify.css')}}" />
 
-
     <!-- Data table CSS start-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css"/>
-
 
     <!-- Data tables -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}">
@@ -50,15 +54,16 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css')}}">
-
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/nouislider/nouislider.css')}}" />
 
     <!-- date range picker -->
     <link  href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
     <!-- Data table CSS end-->
 
-    <!-- sxport button -->
+    <!-- export button -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>     
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>  
+
     <!-- Helpers -->
     <script src="{{asset('/assets/vendor/js/helpers.js')}}"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -71,10 +76,8 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 
-
     <!-- multi select -->
     <link rel="stylesheet" href="multiselect/jquery.multiselect.css">
-
 
     <!-- jquery -->
     <script>
@@ -119,19 +122,22 @@
         color: #ef7615;
     }
 
-   
 
-    .all_camp{
-        transition: width 1s, height 1s;
-        transition-timing-function: ease-in;
+    .all_campaign {
+        transition: background 0.5s, transform 0.5s;
+        /* border-radius: 1.2rem; */
+
     }
-    .all_campaign :hover{
+
+    .all_campaign :hover {
+        border-radius: 1.2rem;
         cursor: pointer;
-        transition: all 1s ease-in;
-        transform: scale(1.1);
+        background-color: #FFC0CB;
+        transform: translateY(-1rem);
     }
 </style>
 </head>
+
 
 <body>
     <!-- Layout wrap1er -->
@@ -173,6 +179,15 @@
     <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
   </div> -->
     <!-- Core JS -->
+
+<!-- Slider js -->
+
+<script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
+
+
+
+
+
     <!-- build:js assets/vendor/js/core.js -->
     <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>
     <script src="{{asset('/assets/vendor/libs/pop1er/pop1er.js')}}"></script>
@@ -293,25 +308,24 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // slider
+    <script>
+        noUiSlider.create(document.getElementById("slider-pips"), {
+            start: [10],
+            behaviour: "tap-drag",
+            step: 10,
+            tooltips: true,
+            range: {
+                min: 0,
+                max: 100
+            },
+            pips: {
+                mode: "steps",
+                stepped: true,
+                density: 5
+            }
+        });
+    </script>
 
     // Adding class active open with all sidebar parent and child
     <script>

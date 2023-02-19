@@ -25,11 +25,6 @@
 
 
 
-
-
-
-
-
     <!-- Examples -->
     <div class="row mb-5">
 
