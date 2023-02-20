@@ -184,10 +184,6 @@
 
 <script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
 
-
-
-
-
     <!-- build:js assets/vendor/js/core.js -->
     <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>
     <script src="{{asset('/assets/vendor/libs/pop1er/pop1er.js')}}"></script>
@@ -308,7 +304,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    // slider
+    // js slider
     <script>
         noUiSlider.create(document.getElementById("slider-pips"), {
             start: [10],
@@ -317,7 +313,7 @@
             tooltips: true,
             range: {
                 min: 0,
-                max: 100
+                max: 60
             },
             pips: {
                 mode: "steps",

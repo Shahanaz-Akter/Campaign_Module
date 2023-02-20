@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-<title>A/B Testing Campaign</title>
+<title>Edit Campaign</title>
 @endsection
 @section('content')
 
@@ -10,15 +10,16 @@
     <!-- Content start-->
     <div class="container-xxl flex-grow-1 container-p-y">
 
-        <h5>Campaigns> Email Campaings</h5>
+        <h5>Campaigns> Email Campaings</h5><br>
+        <h6>Who has entered information right now? his/her name will be placed here within {{name}} tag</h6><br>
         <!-- code start -->
-
 
         <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="row g-3" onsubmit="return false">
 
-                <div class="col-md-6 mb-5">
+                <div
+                 class="col-md-6 mb-5">
                     <div class="row">
                         <label class="col-sm-3  text-sm-end" for="formtabs-first-name">Name</label>
                         <div class="col-sm-6">
@@ -161,59 +162,7 @@
 
 
 <script>
-    const color_blue1 = () => {
-        let subject = document.querySelector('.subject');
-
-        if (!(subject.classList.contains('btn', 'btn-primary' , 'btn-sm'))) {
-            subject.classList.add('btn', 'btn-primary' , 'btn-sm');
-        } else {
-            subject.classList.remove('btn', 'btn-primary' , 'btn-sm');
-        }
-
-
-    }
-
-    const color_blue2 = () => {
-        let sender_details = document.querySelector('.sender_details');
-
-        if (!(sender_details.classList.contains('btn', 'btn-primary' , 'btn-sm'))) {
-            sender_details.classList.add('btn', 'btn-primary' , 'btn-sm');
-        } else {
-            sender_details.classList.remove('btn', 'btn-primary', 'btn-sm');
-        }
-
-
-    }
-
-    const color_blue3 = () => {
-
-        let email_content = document.querySelector('.email_content');
-
-        if (!(email_content.classList.contains('btn', 'btn-primary','btn-sm'))) {
-            email_content.classList.add('btn', 'btn-primary', 'btn-sm');
-        } else {
-            email_content.classList.remove('btn', 'btn-primary', 'btn-sm');
-        }
-
-    }
-
-    const manual = () => {
-
-        let test_duration = document.querySelector('#test_duration');
-        let incolclusive = document.querySelector('#incolclusive_send');
-
-        let test = test_duration.classList.contains('d-none');
-        let incol = incolclusive.classList.contains('d-none');
-
-        if (test && incol) {
-            test_duration.classList.remove('d-none');
-            incolclusive.classList.remove('d-none');
-        } else {
-            test_duration.classList.add('d-none');
-            incolclusive.classList.add('d-none');
-        }
-
-    }
+  
 </script>
 
 @endsection
