@@ -18,6 +18,10 @@ Route::get('/example', function () {
 Route::get('/email_campaigns', function () {
     return view('Campaigns.email_campaigns');
 });
+
+Route::get('/next', function () {
+    return view('Campaigns.Email_camp.next1');
+});
 Route::get('/create_campaign', function () {
     return view('Campaigns.create_campaign');
 });
@@ -28,10 +32,20 @@ Route::get('/ab_testing', function () {
 
 
 Route::get('/social_campaigns', function () {
-    return view('Campaigns.social_campaigns');
+    return view('Campaigns.Social_camp.social_campaigns');
+});
+Route::get('/page_campaigns', function () {
+    return view('Campaigns.Social_camp.page_campaigns');
+});
+Route::get('/post_campaigns', function () {
+    return view('Campaigns.Social_camp.post_campaigns');
+});
+
+Route::get('/regular_post_campaigns', function () {
+    return view('Campaigns.Social_camp.regular_post_campaigns');
 });
 Route::get('/sms_campaigns', function () {
-    return view('Campaigns.sms_campaigns');
+    return view('Campaigns.Sms_camp.sms_campaigns');
 });
 
 // Contacts Route

@@ -7,29 +7,30 @@
 <!-- Content wrapper start -->
 <div class="content-wrapper">
 
-    <!-- Content start-->
-    <div class="container-xxl flex-grow-1 container-p-y">
+  <!-- Content start-->
+  <div class="container-xxl flex-grow-1 container-p-y">
 
-        <!-- Examples -->
+    <!-- Examples -->
 
 
-<div class="row">
-<!-- Scale & Pips -->
-  <div class="col-12">
-    <div class="row card mb-4">
-      <label class="card-header col-sm-3">Scale & Pips</label>
-      <div class="card-body col-sm-9 pb-5">
-        <div class="my-3" id="slider-pips"></div>
-      </div>
+    <div class="container">
+    <div>
+    <p>gggy</p>
+    <p>gggy</p>
+    </div><br>
+
+
+    <div>
+    <p>gggy</p>
+    <p>gggy</p>
     </div>
+    </div>
+
+    
+
+
   </div>
-  <!-- /Scale & Pips -->
-        </div>
-      
-
-
-    </div>
-    <!-- Content end-->
+  <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
 

@@ -65,7 +65,7 @@
                             <span style="border-radius: 2px;"> <span class="text-white bg-warning text-center mb-2">A</span>
                                 2.5% of Receipents</span>
                             <span class="ms-2" style="border-radius: 2px;"><span class="text-white bg-primary text-center">B</span> 2.5% of Receipents</span> <br>
-                            <small>The willing version will then sent  to the other 95% of your list</small>
+                            <small>The willing version will then sent to the other 95% of your list</small>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,15 @@
 
 
         <div class="d-flex justify-content-end">
+
             <!-- flex child-1 -->
+            <a href="{{url('/email_campaigns')}}">
+                <div class="btn btn-warning me-3">
+                    Cancel
+                </div>
+            </a>
+
+            <!-- flex child-2 -->
             <a href="{{url('/next1')}}">
                 <div class="btn btn-warning">
                     Next
@@ -154,6 +162,7 @@
         </div>
 
         <!-- code end -->
+
     </div>
     <!-- Content end-->
 </div>
@@ -164,10 +173,10 @@
     const color_blue1 = () => {
         let subject = document.querySelector('.subject');
 
-        if (!(subject.classList.contains('btn', 'btn-primary' , 'btn-sm'))) {
-            subject.classList.add('btn', 'btn-primary' , 'btn-sm');
+        if (!(subject.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
+            subject.classList.add('btn', 'btn-primary', 'btn-sm');
         } else {
-            subject.classList.remove('btn', 'btn-primary' , 'btn-sm');
+            subject.classList.remove('btn', 'btn-primary', 'btn-sm');
         }
 
 
@@ -176,8 +185,8 @@
     const color_blue2 = () => {
         let sender_details = document.querySelector('.sender_details');
 
-        if (!(sender_details.classList.contains('btn', 'btn-primary' , 'btn-sm'))) {
-            sender_details.classList.add('btn', 'btn-primary' , 'btn-sm');
+        if (!(sender_details.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
+            sender_details.classList.add('btn', 'btn-primary', 'btn-sm');
         } else {
             sender_details.classList.remove('btn', 'btn-primary', 'btn-sm');
         }
@@ -189,7 +198,7 @@
 
         let email_content = document.querySelector('.email_content');
 
-        if (!(email_content.classList.contains('btn', 'btn-primary','btn-sm'))) {
+        if (!(email_content.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
             email_content.classList.add('btn', 'btn-primary', 'btn-sm');
         } else {
             email_content.classList.remove('btn', 'btn-primary', 'btn-sm');

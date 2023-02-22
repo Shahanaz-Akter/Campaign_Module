@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-<title>Edit Campaign</title>
+<title>Next Campaign</title>
 @endsection
 @section('content')
 
@@ -18,20 +18,37 @@
             @csrf
             <div class="row g-3" onsubmit="return false">
 
-                <div
-                 class="col-md-6 mb-5">
+                <div class="col-12 mb-5">
                     <div class="row">
-                        <label class="col-sm-3  text-sm-end" for="formtabs-first-name">Name</label>
-                        <div class="col-sm-6">
+                        <label class="col-sm-3  text-sm-end" for="formtabs-first-name">Subject A</label>
+                        <div class="col-sm-5">
                             <input type="text" id="formtabs-first-name" class="form-control" placeholder="Enter Name" />
                         </div>
 
-                        <div class="col-sm-3"><select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
-                                <option value="">Unclassified</option>
-                                <option value="Australia">Australia</option>
-                                <option value="United Arab Emirates">United Arab Emirates</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="United States">United States</option>
+                        <div class="col-sm-4">
+                            <select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
+                                <option value="">Personalize</option>
+                                <option value="Australia">Contact First Name</option>
+                                <option value="United Arab Emirates">Contact Last Name</option>
+                             
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5">
+                    <div class="row">
+                        <label class="col-sm-3  text-sm-end" for="formtabs-first-name">Subject B</label>
+                        <div class="col-sm-5">
+                            <input type="text" id="formtabs-first-name" class="form-control" placeholder="Enter Name" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
+                                <option value="">Personalize</option>
+                                <option value="Australia">Contact First Name</option>
+                                <option value="United Arab Emirates">Contact Last Name</option>
+                             
                             </select>
                         </div>
                     </div>
