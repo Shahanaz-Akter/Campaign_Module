@@ -83,7 +83,7 @@
             <div class="d-flex justify-content-between">
 
                 <button type="submit" class="btn btn-outline-secondary me-5" style="font-family: 'Lato', sans-serif;">
-                    <a class="text-black" href="{{url('/social_campaigns')}}">Previous</a>
+                    <a class="text-black" href="{{url('/social_campaigns')}}">Cancel</a>
                 </button>
                 <button type="submit" class="btn btn-danger me-5" style="font-family: 'Lato', sans-serif;">
                     <a class="text-white" href="{{url('')}}">Next</a>

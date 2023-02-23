@@ -35,7 +35,7 @@
                             <div class="card-text d-block" style="color: black;" onmouseover="mouseOver1()" onmouseleave="mouseLeave1()">Engage with your audience through Social Media Updates<span class="typcn typcn-warning-outline"></span></div>
                         </div>
                         <div class="mb-5  create_new1 d-none">
-                            <a class="btn btn-warning" style="width: 150px!important; margin: 0 auto; margin-bottom: 40px;" href="{{url('/regular_post_campaigns')}}">Create New</a>
+                            <a class="btn btn-warning" style="width: 150px!important; margin: 0 auto; margin-bottom: 40px;" href="{{url('/regular_based_post_campaigns')}}">Create New</a>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                             <div class="card-text d-block" style="color: black;" onmouseover="mouseOver2()" onmouseleave="mouseLeave2()">Get Periodic updates and post them to Social Media<span class="typcn typcn-warning-outline"></span></div>
                         </div>
                         <div class="mb-5  d-none create_new2">
-                            <a class="btn btn-warning" style="width: 150px!important; margin: 0 auto; margin-bottom: 40px;" href="{{url('/rss_post_campaigns')}}">Create New</a>
+                            <a class="btn btn-warning" style="width: 150px!important; margin: 0 auto; margin-bottom: 40px;" href="{{url('/rss_based_post_campaigns')}}">Create New</a>
                         </div>
                     </div>
 

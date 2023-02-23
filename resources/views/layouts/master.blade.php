@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/flag-icons.css')}}" />
     <!-- date Picker -->
    
+    <!-- Time Picker -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
+
     <!-- Core CSS -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/theme-semi-dark.css')}}" class="template-customizer-theme-css" />
@@ -93,6 +96,14 @@
     <!-- beautify ignore:end -->
 
 <style>
+    .week {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+
     .hover:hover {
         color: red;
         font-weight: bold;
@@ -180,9 +191,9 @@
   </div> -->
     <!-- Core JS -->
 
-<!-- Slider js -->
+    <!-- Slider js -->
 
-<script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
+    <script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
 
     <!-- build:js assets/vendor/js/core.js -->
     <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>
@@ -196,6 +207,10 @@
     <!-- endbuild -->
     <!-- Vendors JS -->
     <script src="{{asset('/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
+
+    <!-- Time Picker Js -->
+    <script src="{{asset('/assets/vendor/libs/flatpickr/flatpickr.js')}}"></script>
+
     <!-- Main JS -->
     <script src="{{asset('/assets/js/main.js')}}"></script>
     <!-- Page JS -->
@@ -214,7 +229,8 @@
     <!-- for data tables -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script>
+
+    <!-- <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script> -->
     <!-- for data tables end -->
 
     <!-- extra part er JS -->
@@ -225,10 +241,25 @@
     <script src="{{asset('/assets/js/forms-tagify.js')}}"></script>
     <!-- Vendors JS -->
     <script src="{{asset('/assets/vendor/js/dropdown-hover.js')}}"></script>
+
+    <!-- tIME PICKER JQUERY -->
+    <SCRIPT>
+        var flatpickrTime1 = document.querySelector("#flatpickr-time1");
+
+        flatpickrTime1.flatpickr({
+            enableTime: true,
+            noCalendar: true
+        });
+
+        var flatpickrTime2 = document.querySelector("#flatpickr-time2");
+
+        flatpickrTime2.flatpickr({
+            enableTime: true,
+            noCalendar: true
+        });
+    </SCRIPT>
+
     <script src="{{asset('assets/vendor/libs/select2/select2.js')}}"></script>
-    <script src="{{asset('/assets/vendor/libs/flatpickr/flatpickr.js')}}" />
-
-
     <script>
         $(".select2").select2();
         $(document).ready(function() {
@@ -249,6 +280,7 @@
         });
     </script>
 
+    <script src="{{asset('/assets/vendor/libs/flatpickr/flatpickr.js')}}"></script>
     <script>
         var flatpickrDate1 = document.querySelector("#flatpickr-date1");
         flatpickrDate1.flatpickr({

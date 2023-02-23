@@ -41,8 +41,11 @@ Route::get('/post_campaigns', function () {
     return view('Campaigns.Social_camp.post_campaigns');
 });
 
-Route::get('/regular_post_campaigns', function () {
-    return view('Campaigns.Social_camp.regular_post_campaigns');
+Route::get('/regular_based_post_campaigns', function () {
+    return view('Campaigns.Social_camp.regular_based_post_campaigns');
+});
+Route::get('/rss_based_post_campaigns', function () {
+    return view('Campaigns.Social_camp.rss_based_post_campaigns');
 });
 Route::get('/sms_campaigns', function () {
     return view('Campaigns.Sms_camp.sms_campaigns');
