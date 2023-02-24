@@ -27,9 +27,11 @@ Route::get('/create_campaign', function () {
 });
 
 Route::get('/ab_testing', function () {
-    return view('Campaigns.Email_Camp.ab_testing');
+    return view('Campaigns.A/b_testing.ab_testing');
 });
-
+Route::get('/ab_next1', function () {
+    return view('Campaigns.A/b_testing.ab_next1');
+});
 
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');

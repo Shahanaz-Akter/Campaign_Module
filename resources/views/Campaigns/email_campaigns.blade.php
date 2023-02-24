@@ -1,15 +1,15 @@
 @extends('layouts.master')
 @section('title')
-<title>Email Campaign</title>
+<title>Email Campaigns</title>
 @endsection
 @section('content')
+
 
 <!-- Content wrapper start -->
 <div class="content-wrapper">
 
     <!-- Content start-->
     <div class="container-xxl flex-grow-1 container-p-y">
-
 
         <h5>Campaigns> Email Campaings</h5>
         <div class="d-flex justify-content-between">
@@ -21,50 +21,38 @@
             </div>
 
         </div>
-    </div>
 
+        <!-- Examples -->
+        <div class="row mb-5">
 
-
-    <!-- Examples -->
-    <div class="row mb-5">
-
-        <div class="col-md-4 col-lg-4 mb-3">
-            <div class="card h-100 text-center">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Regular Email</b></h5>
-
-                </div>
-                <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" />
-                <div class="card-body">
-                    <p class="card-text">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
-
+            <div class="col-md-4 col-lg-4 mb-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Regular Email</b></h5>
+                    </div>
+                    <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-text">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-4 col-lg-4 mb-3">
-            <div class="card h-100 text-center">
-                <div class="card-body">
-                    <h5 class="card-title"><b> not Regular Email</b></h5>
-
-                </div>
-                <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" />
-                <div class="card-body">
-                    <p class="card-text">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
-
+            <div class="col-md-4 col-lg-4 mb-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> not Regular Email</b></h5>
+                    </div>
+                    <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-text">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
+                    </div>
                 </div>
             </div>
+
         </div>
-
-       
-       
+        <!-- Examples -->
     </div>
-    <!-- Examples -->
-
-
-</div>
-<!-- Content end-->
+    <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
-
 @endsection

@@ -96,19 +96,19 @@
     <!-- beautify ignore:end -->
 
 <style>
+
+    #learn_more:hover{
+        color: orangered;
+    }
     .week {
         color: black;
-        font-weight: bold;
+        font-weight: light;
         font-size: 20px;
     }
-
-
-
     .hover:hover {
         color: red;
         font-weight: bold;
     }
-
     .data_search:hover::after {
         content: "";
         height: 2px;
@@ -128,28 +128,24 @@
         cursor: pointer;
         transition: all .6ms;
     }
-
     .camp:hover {
         color: #ef7615;
     }
-
-
     .all_campaign {
         transition: background 0.5s, transform 0.5s;
         /* border-radius: 1.2rem; */
 
     }
-
     .all_campaign :hover {
         border-radius: 1.2rem;
         cursor: pointer;
         background-color: #FFC0CB;
         transform: translateY(-1rem);
     }
+
 </style>
+
 </head>
-
-
 <body>
     <!-- Layout wrap1er -->
     <div class="layout-wrap1er layout-content-navbar">
@@ -355,7 +351,7 @@
         });
     </script>
 
-    // Adding class active open with all sidebar parent and child
+<!-- Adding class active open with all sidebar parent and child -->
     <script>
         let url = window.location.href;
         let p1 = document.querySelector('#p1');

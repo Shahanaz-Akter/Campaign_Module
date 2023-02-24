@@ -579,14 +579,6 @@
 </div>
 <!-- Add Feedback Modal end -->
 
-
-
-
-
-
-
-
-
 <script>
     const action_search = () => {
         let action_search = document.querySelector('#action_search');
