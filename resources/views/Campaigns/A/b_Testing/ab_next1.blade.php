@@ -16,7 +16,8 @@
 
         <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
             @csrf
-            <div class="row g-3" onsubmit="return false">
+
+            <div class="row g-3">
 
                 <div class="col-md-12 col-lg-12 col-sm-12 mb-5">
                     <div class="row">
@@ -109,20 +110,22 @@
                 </div>
 
 
-
-
-
                 <div class="col-md-12 col-lg-12 col-sm-12 mb-5">
                     <div class="row">
                         <label class="col-sm-2  text-sm-end text-end" for="formtabs-first-name">Reply tracking</label>
                         <div class="col-sm-8">
-                            <input type="text" id="formtabs-first-name" class="form-control" placeholder="Enter Name" />
+                            <label class="switch">
+                                <input type="checkbox" class="switch-input" />
+                                <span class="switch-toggle-slider">
+                                    <span class="switch-on"></span>
+                                    <span class="switch-off"></span>
+                                </span>
+                                <span class="switch-label">Default</span>
+                            </label>
+
                         </div>
-
-
                     </div>
                 </div>
-
 
 
                 <div class="col-12 mb-5">
@@ -146,7 +149,8 @@
                         <div class="row">
                             <label class="col-sm-2  text-sm-end" for="formtabs-first-name">Reply-To</label>
 
-                            <div class="col-sm-8"><select id="formtabs-country" class="select2 form-select">
+                            <div class="col-sm-8">
+                                <select id="formtabs-country" class="select2 form-select">
                                     <option value="">$[CRM Owner: Email]$</option>
                                     <option value="Australia">Contact First Name</option>
                                     <option value="United Arab Emirates">Contact Last Name</option>
@@ -180,7 +184,7 @@
                 </div>
 
 
-               
+
                 <div class="col-12 mb-5">
                     <div class="row">
                         <label class="col-sm-2 ms-5">Personalize <br> 'To-address'</label>
@@ -205,9 +209,9 @@
         <div class="d-flex justify-content-end ">
 
             <!-- flex child-1 -->
-            <a href="{{url('/email_campaigns')}}">
+            <a href="{{url('/ab_testing')}}">
                 <div class="btn btn-warning me-3">
-                    Cancel
+                    Previous
                 </div>
             </a>
 

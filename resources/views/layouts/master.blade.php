@@ -12,8 +12,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
 
-<!-- slider css link -->
-<link rel="stylesheet" href="{{asset('assets/vendor/libs/nouislider/nouislider.css')}}" />
+    <!-- slider css link -->
+    <link rel="stylesheet" href="{{asset('assets/vendor/libs/nouislider/nouislider.css')}}" />
 
     <!-- Modal Examples CSS Link-->
     <link rel="stylesheet" href="{{asset('vendor/libs/animate-css/animate.css')}}"> 
@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/flag-icons.css')}}" />
     <!-- date Picker -->
    
+
+    <!-- Code editor css link -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/typography.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/katex.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/editor.css')}}" />
+
+
     <!-- Time Picker -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
 
@@ -96,19 +103,21 @@
     <!-- beautify ignore:end -->
 
 <style>
-
-    #learn_more:hover{
+    #learn_more:hover {
         color: orangered;
     }
+
     .week {
         color: black;
         font-weight: light;
         font-size: 20px;
     }
+
     .hover:hover {
         color: red;
         font-weight: bold;
     }
+
     .data_search:hover::after {
         content: "";
         height: 2px;
@@ -128,24 +137,37 @@
         cursor: pointer;
         transition: all .6ms;
     }
+
     .camp:hover {
         color: #ef7615;
     }
+
     .all_campaign {
         transition: background 0.5s, transform 0.5s;
         /* border-radius: 1.2rem; */
 
     }
+
     .all_campaign :hover {
         border-radius: 1.2rem;
         cursor: pointer;
-        background-color: #FFC0CB;
+        color: maroon;
         transform: translateY(-1rem);
     }
 
+    .over {
+        transform: 0.9s;
+
+    }
+
+    .over:hover {
+        transform: translateY(-0.5rem);
+
+    }
 </style>
 
 </head>
+
 <body>
     <!-- Layout wrap1er -->
     <div class="layout-wrap1er layout-content-navbar">
@@ -229,6 +251,7 @@
     <!-- <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script> -->
     <!-- for data tables end -->
 
+
     <!-- extra part er JS -->
     <script src="{{asset('/assets/vendor/libs/jquery-repeater/jquery-repeater.js')}}"></script>
     <script src="{{asset('/assets/js/forms-extras.js')}}"></script>
@@ -310,11 +333,11 @@
 
     <!-- Page JS -->
     <script src="{{asset('../../assets/js/tables-datatables-basic.js')}}"></script>
-    // mul;ti Select
+    <!-- multi Select -->
     <script>
         const mySelect = new mdb.Select(document.getElementById('mySelect'), options)
     </script>
-    // jquery
+    <!-- jquery -->
     <script>
         $(document).ready(function() {
             $('#example').DataTable({
@@ -332,7 +355,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    // js slider
+    <!-- js slider -->
     <script>
         noUiSlider.create(document.getElementById("slider-pips"), {
             start: [10],
@@ -351,7 +374,80 @@
         });
     </script>
 
-<!-- Adding class active open with all sidebar parent and child -->
+
+    <!-- Code editor js link -->
+    <script src="{{asset('/assets/vendor/libs/quill/katex.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/quill/quill.js')}}"></script>
+
+    <!-- js code -->
+    <script>
+        const fullToolbar = [
+            [{
+                    font: []
+                },
+                {
+                    size: []
+                }
+            ],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{
+                    color: []
+                },
+                {
+                    background: []
+                }
+            ],
+            [{
+                    script: 'super'
+                },
+                {
+                    script: 'sub'
+                }
+            ],
+            [{
+                    header: '1'
+                },
+                {
+                    header: '2'
+                },
+                'blockquote',
+                'code-block'
+            ],
+            [{
+                    list: 'ordered'
+                },
+                {
+                    list: 'bullet'
+                },
+                {
+                    indent: '-1'
+                },
+                {
+                    indent: '+1'
+                }
+            ],
+            [
+                'direction',
+                {
+                    align: []
+                }
+            ],
+            ['link', 'image', 'video', 'formula'],
+            ['clean']
+        ];
+
+        const fullEditor = new Quill('#full-editor', {
+            bounds: '#full-editor',
+            placeholder: 'Type Something...',
+            modules: {
+                formula: true,
+                toolbar: fullToolbar
+            },
+            theme: 'snow'
+        });
+    </script>
+
+    <!-- Adding class active open with all sidebar parent and child -->
     <script>
         let url = window.location.href;
         let p1 = document.querySelector('#p1');

@@ -32,7 +32,12 @@ Route::get('/ab_testing', function () {
 Route::get('/ab_next1', function () {
     return view('Campaigns.A/b_testing.ab_next1');
 });
-
+Route::get('/ab_next2', function () {
+    return view('Campaigns.A/b_testing.ab_next2');
+});
+Route::get('/predesigned_template', function () {
+    return view('Campaigns.A/b_testing.predesigned_template');
+});
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');
 });
