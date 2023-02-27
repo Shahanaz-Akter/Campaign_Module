@@ -73,7 +73,8 @@
 
                         <div class="h-100 text-center">
                             <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
-                                <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5"></i>
+                                <!-- <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5"></i> -->
+                                <i class="img-fluid fa-solid fa-cloud-arrow-up mb-2 mt-5" style="font-size: 40px!important;"></i>
                             </div>
                             <div class="card-body">
 
@@ -105,7 +106,8 @@
                             <div class="h-100 text-center">
 
                                 <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
-                                    <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5"></i>
+
+                                    <i class="img-fluid fa-regular fa-message f-5 mb-2 mt-5" style="font-size: 40px!important;"></i>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
@@ -154,9 +156,5 @@
 <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
-
-<script>
-
-</script>
 
 @endsection

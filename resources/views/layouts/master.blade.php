@@ -56,6 +56,7 @@
 
     <!-- Data table CSS start-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"/>
+
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css"/>
 
     <!-- Data tables -->
@@ -89,6 +90,26 @@
     <!-- multi select -->
     <link rel="stylesheet" href="multiselect/jquery.multiselect.css">
 
+    <!-- multi file-upload select -->
+    <script>
+    const dropzoneMulti = new Dropzone('#dropzone-multi', {
+    previewTemplate: previewTemplate,
+    parallelUploads: 1,
+    maxFilesize: 5,
+    addRemoveLinks: true
+    });
+    </script>
+
+    <script>
+     const myDropzone = new Dropzone('#dropzone-basic', {
+    previewTemplate: previewTemplate,
+    parallelUploads: 1,
+    maxFilesize: 5,
+    addRemoveLinks: true,
+    maxFiles: 1
+    });
+    </script>
+ 
     <!-- jquery -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -103,6 +124,18 @@
     <!-- beautify ignore:end -->
 
 <style>
+    .text_colr:hover {
+        color: green !important;
+        font-weight: bold;
+
+    }
+
+    .h_effect:hover {
+        background: linear-gradient(transparent 100%, #c6d8e6 50%, #c6d8e6 56%, #c6d8e6 80%);
+        border: 2px dashed green;
+    }
+
+
     #learn_more:hover {
         color: orangered;
     }

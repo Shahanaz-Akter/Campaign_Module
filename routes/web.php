@@ -38,6 +38,15 @@ Route::get('/ab_next2', function () {
 Route::get('/predesigned_template', function () {
     return view('Campaigns.A/b_testing.predesigned_template');
 });
+
+Route::get('/basic_template', function () {
+    return view('Campaigns.A/b_testing.basic_template');
+});
+
+Route::get('/upload_from_computer', function () {
+    return view('Campaigns.A/b_testing.upload_from_computer');
+});
+
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');
 });
