@@ -15,7 +15,7 @@
             @csrf
 
             <!-- row  start-->
-            <div class="mb-5 fs-4  text-center text-black text_colr">Upload from Computer</div>
+            <div class="mb-5 fs-4  text-center text-black text_colr fw-bold">Upload from Computer</div>
 
 
             <!-- row start -->

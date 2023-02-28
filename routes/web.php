@@ -46,6 +46,9 @@ Route::get('/basic_template', function () {
 Route::get('/upload_from_computer', function () {
     return view('Campaigns.A/b_testing.upload_from_computer');
 });
+Route::get('/import_from_cloud', function () {
+    return view('Campaigns.A/b_testing.import_from_cloud');
+});
 
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');

@@ -124,6 +124,14 @@
     <!-- beautify ignore:end -->
 
 <style>
+    .ex {
+        transform: 0.9s;
+    }
+
+    .ex:hover {
+        transition: all 2s;
+    }
+
     .text_colr:hover {
         color: green !important;
         font-weight: bold;

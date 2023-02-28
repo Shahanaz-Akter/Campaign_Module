@@ -143,7 +143,7 @@
 
         <!-- flex child-2 -->
         <a href="{{url('/ab_next3')}}">
-            <div class="btn btn-warning mt-5">
+            <div class="btn btn-warning">
                 Next
             </div>
         </a>
