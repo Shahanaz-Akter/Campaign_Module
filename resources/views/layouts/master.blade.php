@@ -183,25 +183,17 @@
         color: #ef7615;
     }
 
-    .all_campaign {
-        transition: background 0.5s, transform 0.5s;
-        /* border-radius: 1.2rem; */
 
-    }
-
-    .all_campaign :hover {
-        border-radius: 1.2rem;
+    .all_campaign:hover {
         cursor: pointer;
-        color: maroon;
-        transform: translateY(-1rem);
-    }
-
-    .over {
-        transform: 0.9s;
+        z-index: 50000;
+        transition: transform 1s;
+        transform: scale(1.1);
 
     }
 
     .over:hover {
+        transform: 1s;
         transform: translateY(-0.5rem);
 
     }

@@ -50,9 +50,8 @@
                     <div class="card text-center" style="max-width: 250px;">
                         <div class="card-title">Courteous</div>
                         <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="">
-                                <div class="btn btn-warning mt-3 over">Select Template</div>
+                        <div class="card-body" <a href="">
+                            <div class="btn btn-warning mt-3 over">Select Template</div>
                             </a>
 
                         </div>

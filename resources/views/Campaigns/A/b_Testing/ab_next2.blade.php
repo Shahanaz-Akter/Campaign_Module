@@ -17,14 +17,14 @@
             <div class="row">
 
                 <!-- row class start -->
-                <div class="d-flex gap-3 align-items-center justify-content-around mb-5 " style="margin: auto!important; max-width: 50%!important; padding: 2rem!important;">
+                <div class="d-flex gap-5 align-items-center justify-content-around mb-5 " style="margin: auto!important; max-width: 50%!important; padding: 2rem!important;">
 
-                    <div class="col-md-3 col-lg-3 w-75 mb-5 mt-5 bd-highlight over">
+                    <div class="col-md-3 col-lg-3 w-75 mb-5 mt-5 bd-highlight  all_campaign">
                         <a href="{{url('/predesigned_template')}}">
-                            <div class="card h-100 text-center" style="border-radius: 1.5rem!important" class="all_campaign">
+                            <div class="card h-100 text-center" style="border-radius: 1.5rem!important">
 
                                 <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
-                                    <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5"></i>
+                                    <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5" style="font-size: 50px!important;"></i>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Predesigned Template</h5>
@@ -40,11 +40,11 @@
                     </div>
 
 
-                    <div class="col-md-3 col-lg-3 mb-5 w-75 mt-5  over">
+                    <div class="col-md-3 col-lg-3 mb-5 w-75 mt-5 all_campaign">
                         <a href="{{url('/basic_template')}}">
-                            <div class="card h-100 text-center" style="border-radius: 1.5rem!important" class="all_campaign">
+                            <div class="card h-100 text-center" style="border-radius: 1.5rem!important">
                                 <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
-                                    <i class=" img-fluid bx bxl-facebook-circle mb-2 mt-5"></i>
+                                    <i class=" img-fluid bx bxl-facebook-circle mb-2 mt-5" style="font-size: 50px!important;"></i>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Basic Template</h5>
@@ -74,7 +74,7 @@
                         <div class="h-100 text-center">
                             <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
                                 <!-- <i class="img-fluid bx bxl-facebook-circle mb-2 mt-5"></i> -->
-                                <i class="img-fluid fa-solid fa-cloud-arrow-up mb-2 mt-5" style="font-size: 40px!important;"></i>
+                                <i class="img-fluid fa-solid fa-cloud-arrow-up text-primary mb-2 mt-5" style="font-size: 50px!important;"></i>
                             </div>
                             <div class="card-body">
 
@@ -102,28 +102,29 @@
 
 
                     <div class="col-md-3 col-lg-3  mb-5 mt-5 bd-highlight w-50 over">
-                        <a href="{{url('/recently_sent')}}">
-                            <div class="h-100 text-center">
 
+                        <a href="{{url('/recently_sent')}}">
+
+                            <div class="h-100 text-center">
                                 <div class="icon-card cursor-pointer text-center  mb-3 mx-2">
 
-                                    <i class="img-fluid fa-regular fa-message f-5 mb-2 mt-5" style="font-size: 40px!important;"></i>
+                                    <i class="img-fluid fa-regular fa-message text-primary f-5 mb-2 mt-5" style="font-size: 50px!important;"></i>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         Recently Sent
                                     </h5>
                                 </div>
-
-                                <!-- <img class="img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" /> -->
+                                <!-- <img class=" img-fluid" src="../../assets/img/elements/13.jpg" style="height: 250px;  width: auto;" alt="Card image cap" /> -->
                                 <div class="card-body">
                                     <p class="card-text d-block" style="color: black;">Use the template from a recently sent campaign.
                                         <span class="typcn typcn-warning-outline"></span>
                                     </p>
                                 </div>
-
                             </div>
+
                         </a>
+
                     </div>
 
                 </div>
@@ -149,12 +150,14 @@
         </a>
 
     </div>
-
     <!-- code end -->
 
 </div>
 <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
+
+
+
 
 @endsection

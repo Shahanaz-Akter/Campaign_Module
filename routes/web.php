@@ -49,7 +49,12 @@ Route::get('/upload_from_computer', function () {
 Route::get('/import_from_cloud', function () {
     return view('Campaigns.A/b_testing.import_from_cloud');
 });
-
+Route::get('/recently_sent', function () {
+    return view('Campaigns.A/b_testing.recently_sent');
+});
+Route::get('/rss_testing', function () {
+    return view('Campaigns.Rss_testing.rss_testing');
+});
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');
 });
