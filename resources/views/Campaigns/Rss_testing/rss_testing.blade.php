@@ -16,119 +16,198 @@
 
         <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
             @csrf
-            <div class="row g-3" onsubmit="return false">
+            <div class="row g-3">
 
-
-
-                <div class="col-md-6 mb-5">
+                <div class="col-md-7 mb-3 mt-5">
                     <div class="row">
-                        <label class="col-sm-3  text-sm-end" for="formtabs-first-name">RSS Feed or Blog URL</label>
-                        <div class="col-sm-7 ms-4">
-                            <input type="text" id="formtabs-first-name" class="form-control" placeholder="Enter Name" />
+                        <label class="col-sm-3 text-end">RSS Feed or Block</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Enter URL">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-5"></div>
 
-                <div class="col-md-6 mb-5">
+
+                <div class="col-md-7 mb-3">
                     <div class="row">
                         <label class="col-sm-3 text-end" for="formtabs-first-name">When to Send the emails?</label>
 
-                        <div class="col-sm-9 text-center shadow-sm p-2 bg-white rounded" style="min-width: 400px; min-height: 35px!important; padding: 3px!important;">
+                        <div class="col-sm-9 text-center ms-4 rounded" style="margin-top: -40px!important; padding: 2px!important;">
 
-                            <input class="ms-2 invisible" id="subject" name="all" type="radio" value="subject" />
-                            <label class="ms-1 subject" for="subject" onclick="color_blue1()">Days</label>
+                            <input class="ms-2 invisible" id="days" name="all" type="radio" value="days" />
+                            <label class="ms-1 days" for="days" onclick="days()">Days</label>
 
-                            <input id="sender_details" class="ms-4 invisible" name="all" type="radio" value="sender_details" />
-                            <label class="ms-1 sender_details" for="sender_details" onclick="color_blue2()">Weeks</label>
+                            <input id="weeks" class="ms-4 invisible" name="all" type="radio" value="weeks" />
+                            <label class="ms-1 weeks" for="weeks" onclick="weeks()">Weeks</label>
 
-                            <input id="email_content" class="ms-4 invisible" name="all" type="radio" value="email_content" />
-                            <label class="ms-1 email_content" for="email_content" onclick="color_blue3()">Months</label>
+                            <input id="months" class="ms-4 invisible" name="all" type="radio" value="months" />
+                            <label class="ms-1 months" for="months" onclick="months()">Months</label>
 
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-md-6 mb-5"> </div>
-
-                <div class="col-md-6 mb-5">
+                <div class="col-md-7 mb-3 oncein_three">
                     <div class="row">
                         <label class="col-sm-3"></label>
                         <div class="col-sm-9">
-                            <select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
-                                <option value="">Once a Day</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
+                            <select id="formtabs-country" class="select2 form-select">
+                                <option value="">Once a days</option>
+                                <option value="" selected>Once in Three days</option>
+                                <option value="">Once in Four days</option>
+                                <option value="">Once in Five days</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6  col-lg-6 mb-5"> </div>
 
-                <div class="col-md-6 mb-5">
-                    <div class="row">
-                        <label class="col-sm-3"></label>
-                        <div class="col-sm-9">
-                            <select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
-                                <option value="">At 00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                            </select>
+                <div class="oncein_three1 d-none">
+                    <div class="col-md-7 mb-3">
+                        <div class="row">
+                            <label class="col-sm-3">Every month on</label>
+                            <div class="col-sm-9">
+                                <select id="formtabs-country" class="select2 form-select">
+                                    <option value="">1 day</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 mb-3">
+                        <div class="row">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                                <select id="formtabs-country" class="select2 form-select">
+                                    <option value="">Once a days</option>
+                                    <option value="" selected>Once in Three days</option>
+                                    <option value="">Once in Four days</option>
+                                    <option value="">Once in Five days</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6 mb-5"> </div>
 
-                <div class="col-md-6 mb-5">
+                <section class="oncein_five d-none">
+                    <div class="col-md-7 mb-3">
+                        <div class="row">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-7">
+                                <select id="formtabs-country" class="select2 form-select">
+                                    <option value="">Once in one</option>
+                                    <option value="">Once a</option>
+                                    <option value="">Once in two</option>
+                                    <option value="">Once in three</option>
+                                    <option value="">Once in four</option>
+                                    <option value="" selected>Once in five</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 text-start">Weeks(On)</div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-7 mb-3">
+                        <div class="row">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                                <select id="country" class="select2 form-select">
+                                    <option value="">Friday</option>
+                                    <option value="">Saturday</option>
+                                    <option value="">Sunday</option>
+                                    <option value="">Monday</option>
+                                    <option value="">Tuesday</option>
+                                    <option value="" selected>Wednesday</option>
+                                    <option value="">Thursday</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mb-3">
+                        <div class="d-flex">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                                <span class="ms-2">Sun</span>
+                                <span class="ms-3">Mon</span>
+                                <span class="ms-3">Wed</span>
+                                <span class="ms-3">Thursday</span>
+                                <span class="ms-3">Friday</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="col-md-7 mb-3">
                     <div class="row">
                         <label class="col-sm-3"></label>
                         <div class="col-sm-9">
-                            <select id="formtabs-country" class="select2 form-select" data-allow-clear="true">
+                            <select id="formtabs" class="select2 form-select" data-allow-clear="true">
+                                <option value="">at 00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-7 mb-3">
+                    <div class="row">
+                        <label class="col-sm-3"></label>
+                        <div class="col-sm-9">
+                            <select id="formtabs" class="select2 form-select" data-allow-clear="true">
                                 <option value="">Asia or Dhaka</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
-                                <option value="00:00">00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
+                                <option value="">00:00</option>
                             </select>
+                            <div style="margin-top: 20px!important;">Campaign will be sent based on this time after a new blog has been posted.</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-5"> </div>
+                <div class="col-md-7 d-flex gap-2 mt-3">
+                    <label class="col-sm-3"></label>
+                    <div class="col-sm-8">
+                        <!-- flex child-1 -->
+                        <span class="">
+                            <button type="submit" class="btn btn-warning">Save</button>
+                        </span>
 
-                <div class="col-12 ms-5">
-                    <button type="submit" class="btn btn-warning">Save</button>
+
+                        <!-- flex child-2 -->
+                        <a href="{{url('/create_campaign')}}">
+                            <div class="btn btn-warning ms-2">
+                                Cancel
+                            </div>
+                        </a>
+
+                        <!-- flex child-3 -->
+                        <a href="{{url('/rss_next1')}}">
+                            <div class="btn btn-warning ms-2">
+                                Next
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </form>
 
 
-        <div class="d-flex justify-content-end">
 
-            <!-- flex child-1 -->
-            <a href="{{url('/create_campaign')}}">
-                <div class="btn btn-warning me-3">
-                    Cancel
-                </div>
-            </a>
-
-            <!-- flex child-2 -->
-            <a href="{{url('/rss_next1')}}">
-                <div class="btn btn-warning">
-                    Next
-                </div>
-            </a>
-
-        </div>
 
         <!-- code end -->
 
@@ -138,56 +217,70 @@
 <!-- Content wrapper end -->
 
 <script>
-    const color_blue1 = () => {
-        let subject = document.querySelector('.subject');
+    const days = () => {
+        let days = document.querySelector('.days');
 
-        if (!(subject.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
-            subject.classList.add('btn', 'btn-primary', 'btn-sm');
+        if (!(days.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
+            days.classList.add('btn', 'btn-primary', 'btn-sm');
         } else {
-            subject.classList.remove('btn', 'btn-primary', 'btn-sm');
+            days.classList.remove('btn', 'btn-primary', 'btn-sm');
+        }
+
+
+        let oncein_five = document.querySelector('.oncein_five');
+        let oncein_three = document.querySelector('.oncein_three');
+
+        let containn = oncein_five.classList.contains('d-none');
+        if (!(containn)) {
+            oncein_five.classList.add('d-none');
+            oncein_three.classList.remove('d-none');
+
+        }
+    }
+
+    const weeks = () => {
+        let weeks = document.querySelector('.weeks');
+
+        if (!(weeks.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
+            weeks.classList.add('btn', 'btn-primary', 'btn-sm');
+        } else {
+            weeks.classList.remove('btn', 'btn-primary', 'btn-sm');
+        }
+
+        let oncein_five = document.querySelector('.oncein_five');
+        let oncein_three = document.querySelector('.oncein_three');
+
+        let containn = oncein_five.classList.contains('d-none');
+        if (containn) {
+
+            oncein_five.classList.remove('d-none');
+            oncein_three.classList.add('d-none');
+
+        } else {
+            oncein_five.classList.add('d-none');
+            oncein_three.classList.remove('d-none');
+
         }
 
 
     }
 
-    const color_blue2 = () => {
-        let sender_details = document.querySelector('.sender_details');
+    const months = () => {
 
-        if (!(sender_details.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
-            sender_details.classList.add('btn', 'btn-primary', 'btn-sm');
+        let months = document.querySelector('.months');
+
+        if (!(months.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
+            months.classList.add('btn', 'btn-primary', 'btn-sm');
         } else {
-            sender_details.classList.remove('btn', 'btn-primary', 'btn-sm');
+            months.classList.remove('btn', 'btn-primary', 'btn-sm');
         }
 
-
-    }
-
-    const color_blue3 = () => {
-
-        let email_content = document.querySelector('.email_content');
-
-        if (!(email_content.classList.contains('btn', 'btn-primary', 'btn-sm'))) {
-            email_content.classList.add('btn', 'btn-primary', 'btn-sm');
-        } else {
-            email_content.classList.remove('btn', 'btn-primary', 'btn-sm');
-        }
-
-    }
-
-    const manual = () => {
-
-        let test_duration = document.querySelector('#test_duration');
-        let incolclusive = document.querySelector('#incolclusive_send');
-
-        let test = test_duration.classList.contains('d-none');
-        let incol = incolclusive.classList.contains('d-none');
-
-        if (test && incol) {
-            test_duration.classList.remove('d-none');
-            incolclusive.classList.remove('d-none');
-        } else {
-            test_duration.classList.add('d-none');
-            incolclusive.classList.add('d-none');
+        let three = document.querySelector('.oncein_three');
+        let new_three = document.querySelector('.oncein_three1');
+        let con = new_three.classList.contains('d-none');
+        if (con) {
+            new_three.classList.remove('d-none');
+            three.classList.add('d-none');
         }
 
     }
