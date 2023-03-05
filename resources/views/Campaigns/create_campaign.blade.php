@@ -35,7 +35,7 @@
                             <div class="card-body">
                                 <p class="card-text d-block" style="color: black;" id="create_none1">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
-                            <div class="btn btn-warning mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">Create New</div>
+                            <div class="btn btn-label-primary mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">Create New</div>
 
                         </div>
 
@@ -56,7 +56,7 @@
                             </div>
 
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new2" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/ab_testing')}}">Create New</a>
+                                <a class="btn btn-label-primary mb-4 d-none" id="create_new2" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/ab_testing')}}">Create New</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                 <p class="card-text" id="create_none3" style="color: black;">Let your contacts know whats new in your website through campaigns without them visiting it.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new3" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/rss_testing')}}">Create New</a>
+                                <a class="btn btn-label-primary mb-4 d-none" id="create_new3" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/rss_testing')}}">Create New</a>
                             </div>
                         </div>
                     </div>
@@ -88,13 +88,22 @@
                             </div>
 
                             <div class="icon-card cursor-pointer text-center  mb-4 mx-2">
-                                <i class=" img-fluid bx bxl-facebook-circle text-primary mb-2" style="font-size: 50px!important;"></i>
+                                <i class="img-fluid bx bxl-facebook-circle text-primary mb-2" style="font-size: 50px!important;"></i>
                             </div>
                             <div class="card-body">
                                 <p class="card-text" id="create_none4" style="color: black;">Promote your webinars created in Zoho Meetingthrough email campaign.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new4" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/zoho_meeting')}}">Create New</a>
+
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new4" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="{{url('zoho_regular_campaign')}}">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="{{url('zoho_a/b_testing')}}">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +124,15 @@
                                 </p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new5" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/go_to_webinar')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new5" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +151,15 @@
                                 <p class="card-text " id="create_none6" style="color: black;">Promote your events by sending invitation for the event hence increase your ticket sale .<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new6" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/event_brike')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new6" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,7 +177,15 @@
                                 <p class="card-text " id="create_none7" style="color: black;">Measure customern satisfication, their product meeds and more with email survey campaign.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new7" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/survey_monkey')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new7" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +204,15 @@
                                 <p class="card-text " id="create_none8" style="color: black;">Create a regular email campaign to your target audience.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new8" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/zoho_survey')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new8" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,7 +231,15 @@
                                 <p class="card-text " id="create_none9" style="color: black;">Create exclusive events, promot it via campaigns and analyze repports. <span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new9" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/zoho_back_stage')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new9" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -209,7 +258,15 @@
                                 <p class="card-text " id="create_none10" style="color: black;">Boost your bsales by generating coupons and sending it through email campaign.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new10" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/coupon')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new10" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,7 +284,15 @@
                                 <p class="card-text " id="create_none11" style="color: black;">Create an email campaign to engage with yourt customers and promote the products in your store.<span class="typcn typcn-warning-outline"></span></p>
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new11" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/ecommerce')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new11" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
 
                         </div>
@@ -247,7 +312,15 @@
 
                             </div>
                             <div>
-                                <a class="btn btn-warning mb-4 d-none" id="create_new12" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/zoho_forms')}}">Create New</a>
+                                <div class="btn-group mt-2">
+                                    <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new12" style="border-radius: 1.5rem;">Create New</div>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

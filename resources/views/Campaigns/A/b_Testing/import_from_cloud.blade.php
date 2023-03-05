@@ -18,18 +18,16 @@
             <div class=".container-fluid mb-5" style="margin-top: 200px; margin-bottom: 50px;">
                 <div class="ms-4 mb-5 fw-bold text-uppercase text-warning fs-4"></div>
                 <!-- row start -->
-                <div class="d-flex gap-4 mb-5 mt-5" style="flex-wrap:wrap;">
+                <div class="d-flex align-items-center justify-content-center gap-5 mb-5 mt-5" style="flex-wrap:wrap;">
 
                     <!-- child 1 -->
-                    <div class="shadow-none text-center h_card1 ex" onmouseover="mou_over1()" onmouseleave="mou_leave1()" style="width: 250px;">
+                    <div class="shadow-none text-center icon_card" onmouseover="mou_over1()" onmouseleave="mou_leave1()" style="max-height: 100px;">
                         <div class="card-img-top">
-                            <!-- <i class="fa-brands fa-google-drive" style="font-size: 70px;"></i> -->
-
-                            <i class="fa-regular fa-hard-drive" style="font-size: 70px;"></i>
-
+                            <!-- <i class="fa-regular fa-hard-drive" style="font-size: 70px;"></i> -->
+                            <img class="card-img-top" src="../../assets/img/icon/work2.png" style="max-width:70px" alt="Zoho Workdrive">
                         </div>
                         <!-- <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Zoho Workdrive"> -->
-                        <div class="card-title">Zoho Workdrive</div>
+                        <div class="card-title">Monday Workdrive</div>
                         <div class="card-body">
                             <a href="">
                                 <div class="btn btn-warning mt-3 over">Import</div>
@@ -40,8 +38,11 @@
 
 
                     <!-- child 2 -->
-                    <div class="shadow-none text-center h_card2 ex" onmouseover="mou_over2()" onmouseleave="mou_leave2()" style="width: 250px;">
-                        <div class="card-img-top"> <i class="fa-brands fa-google-drive" style="font-size: 70px;"></i></div>
+                    <div class="shadow-none text-center icon_card" onmouseover="mou_over2()" onmouseleave="mou_leave2()" style="max-height: 100px;">
+                        <div class="card-img-top">
+                            <!-- <i class="fa-brands fa-google-drive" style="font-size: 70px;"></i> -->
+                            <img class="card-img-top" src="../../assets/img/icon/drive2.png" style="max-width:70px" alt="Zoho Workdrive">
+                        </div>
                         <!-- <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Zoho Workdrive"> -->
                         <div class="card-title">Google drive</div>
                         <div class="card-body">
@@ -53,11 +54,12 @@
                     </div>
 
 
-
                     <!-- child 3-->
-                    <div class="shadow-none text-center h_card3 ex" onmouseover="mou_over3()" onmouseleave="mou_leave3()" style="width: 250px;">
+                    <div class="shadow-none text-center icon_card" onmouseover="mou_over3()" onmouseleave="mou_leave3()" style="max-height: 100px;">
                         <div class="card-img-top">
-                            <i class="fa-solid fa-cloud" style="font-size: 70px;"></i>
+                            <!-- <i class="fa-solid fa-cloud" style="font-size: 70px;"></i> -->
+                            <img class="card-img-top" src="../../assets/img/icon/one_drive2.png" style="max-width:70px" alt="Zoho Workdrive">
+
                         </div>
                         <!-- <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Zoho Workdrive"> -->
                         <div class="card-title">One drive</div>
@@ -70,10 +72,10 @@
                     </div>
 
                     <!-- child 4 -->
-                    <div class="shadow-none text-center h_card4 ex" onmouseover="mou_over4()" onmouseleave="mou_leave4()" style="width: 250px;">
+                    <div class="shadow-none text-center icon_card" onmouseover="mou_over4()" onmouseleave="mou_leave4()" style="max-height: 100px;">
                         <div class="card-img-top">
-                            <i class="fa-brands fa-dropbox" style="font-size: 70px;"></i>
-                            <!-- <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Zoho Workdrive"> -->
+                            <!-- <i class="fa-brands fa-dropbox" style="font-size: 70px;"></i> -->
+                            <img class="card-img-top" src="../../assets/img/icon/drop_box2.png" style="max-width:70px" alt="Zoho Workdrive">
                             <div class="card-title">Drop Box</div>
                             <div class="card-body">
                                 <a href="">
@@ -85,9 +87,11 @@
                     </div>
 
                     <!-- child 5 -->
-                    <div class="shadow-none text-center h_card5 ex" onmouseover="mou_over5()" onmouseleave="mou_leave5()" style="width: 250px;">
+                    <div class="shadow-none text-center  icon_card" onmouseover="mou_over5()" onmouseleave="mou_leave5()" style="max-height: 100px;">
                         <div class="card-img-top">
-                            <i class="fa-solid fa-square" style="font-size: 70px;"></i>
+                            <!-- <i class="fa-solid fa-square" style="font-size: 70px;"></i> -->
+                            <img class="card-img-top" src="../../assets/img/icon/box2.png" style="max-width:70px" alt="Zoho Workdrive">
+
                         </div>
                         <!-- <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Zoho Workdrive"> -->
                         <div class="card-title">Box</div>

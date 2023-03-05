@@ -55,6 +55,22 @@ Route::get('/recently_sent', function () {
 Route::get('/rss_testing', function () {
     return view('Campaigns.Rss_testing.rss_testing');
 });
+
+Route::get('/zoho_regular_campaign', function () {
+    return view('Campaigns.Zoho_meeting.zoho_regular_campaign');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/social_campaigns', function () {
     return view('Campaigns.Social_camp.social_campaigns');
 });

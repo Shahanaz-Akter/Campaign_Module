@@ -124,14 +124,6 @@
     <!-- beautify ignore:end -->
 
 <style>
-    .ex {
-        transform: 0.9s;
-    }
-
-    .ex:hover {
-        transition: all 2s;
-    }
-
     .text_colr:hover {
         color: green !important;
         font-weight: bold;
@@ -186,13 +178,26 @@
 
     .all_campaign:hover {
         cursor: pointer;
-        z-index: 50000;
+        z-index: 5;
         transition: transform 1s;
         transform: scale(1.1);
 
     }
 
+
+    .icon_card:hover {
+        cursor: pointer;
+        z-index: 5;
+
+        transition: transform 1s;
+        transform: scale(1.1);
+
+    }
+
+
+
     .over:hover {
+        visibility: visible;
         transform: 1s;
         transform: translateY(-0.5rem);
 
