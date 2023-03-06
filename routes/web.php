@@ -57,11 +57,25 @@ Route::get('/rss_testing', function () {
 });
 
 Route::get('/zoho_regular_campaign', function () {
-    return view('Campaigns.Zoho_meeting.zoho_regular_campaign');
+    return view('Campaigns.Zoho_meeting.Zoho_regular_campaign');
+});
+Route::get('/zoho_a/b_testing', function () {
+    return view('Campaigns.Zoho_meeting.Zoho_ab_testing');
+});
+Route::get('/coupon_regular_campaign', function () {
+    return view('Campaigns.Coupon.coupon_regular_campaign');
+});
+Route::get('/coupon_a/b_testing', function () {
+    return view('Campaigns.Coupon.coupon_ab_testing');
 });
 
+Route::get('/coupon_next1', function () {
+    return view('Campaigns.Coupon.coupon_next1');
+});
 
-
+Route::get('/coupon_next2', function () {
+    return view('Campaigns.Coupon.coupon_next2');
+});
 
 
 

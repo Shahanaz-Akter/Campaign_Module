@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-<title>Zoho Meeting Regular Campaign</title>
+<title>Coupon Next1</title>
 @endsection
 @section('content')
 
@@ -175,14 +175,14 @@
 
         <div class="d-flex justify-content-end mb-5">
             <!-- flex child-1 -->
-            <a href="{{url('/ab_testing')}}">
+            <a href="{{url('coupon_regular_campaign')}}">
                 <div class="btn btn-warning me-3">
                     Previous
                 </div>
             </a>
 
             <!-- flex child-2 -->
-            <a href="{{url('/ab_next2')}}">
+            <a href="{{url('/coupon_next2')}}">
                 <div class="btn btn-warning">
                     Next
                 </div>

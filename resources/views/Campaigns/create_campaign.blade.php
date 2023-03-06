@@ -262,8 +262,8 @@
                                     <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new10" style="border-radius: 1.5rem;">Create New</div>
                                     <ul class="dropdown-menu">
 
-                                        <li><a class="dropdown-item" href="">Regular Campaign</a></li>
-                                        <li><a class="dropdown-item" href="">A/b Texting</a></li>
+                                        <li><a class="dropdown-item" href="{{url('coupon_regular_campaign')}}">Regular Campaign</a></li>
+                                        <li><a class="dropdown-item" href="{{url('coupon_a/b_testing')}}">A/b Testing</a></li>
 
                                     </ul>
                                 </div>

@@ -413,6 +413,28 @@
     </script>
 
 
+
+    <!--Human date picker js -->
+    <script>
+        var flatpickrFriendly = document.querySelector("#flatpickr-human-friendly");
+
+        flatpickrFriendly.flatpickr({
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d"
+        });
+    </script>
+
+    <!--Time picker js -->
+    <script>
+        var flatpickrTime = document.querySelector("#flatpickr-time");
+
+        flatpickrTime.flatpickr({
+            enableTime: true,
+            noCalendar: true
+        });
+    </script>
+
     <!-- Code editor js link -->
     <script src="{{asset('/assets/vendor/libs/quill/katex.js')}}"></script>
     <script src="{{asset('/assets/vendor/libs/quill/quill.js')}}"></script>
