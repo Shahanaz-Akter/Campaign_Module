@@ -78,10 +78,17 @@ Route::get('/coupon_next2', function () {
 });
 
 
+Route::get('/zoho_forms_regular_campaign', function () {
+    return view('Campaigns.Zoho_forms.zoho_forms_regular_campaign');
+});
 
+Route::get('/zoho_forms_ab_testing_campaign', function () {
+    return view('Campaigns.Zoho_forms.zoho_forms_ab_testing_campaign');
+});
 
-
-
+Route::get('/zoho_forms1', function () {
+    return view('Campaigns.Zoho_forms.zoho_forms1');
+});
 
 
 
