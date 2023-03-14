@@ -317,7 +317,7 @@
                                     <ul class="dropdown-menu">
 
                                         <li><a class="dropdown-item" href="{{url('/zoho_forms_regular_campaign')}}">Regular Campaign</a></li>
-                                        <li><a class="dropdown-item" href="{{url('/zoho_forms_ab_testing_campaign')}}">A/b Testing</a></li>
+                                        <li><a class="dropdown-item" href="{{url('/zoho_ab_testing_campaign')}}">A/b Testing</a></li>
 
                                     </ul>
                                 </div>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title')
+@section('title')endsection
 <title>Example</title>
 @endsection
 @section('content')
@@ -8,23 +8,62 @@
 <div class="content-wrapper">
 
   <!-- Content start-->
-  <div class="container-xxl flex-grow-1 container-p-y">
+  <div class="container-xxl container-p-y">
 
     <!-- Examples -->
+    <div class="row gap-5" style="border: 1px solid red;">
 
-
-    <div class="row">
-      <div id="full-editor">
-        <h6>Quill Rich Text Editor</h6>
-        <p>Cupcake ipsum dolor sit amet. Halvah cheesecake chocolate bar gummi bears cupcake. Pie macaroon bear claw. Soufflé I love candy canes I love cotton candy I love.</p>
+      <div class="card text-center col-sm-5 col-lg-4 col-xxl-2 col-md-3" style="max-width: 30%;">
+        <div class="card-title">Courteous</div>
+        <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a href=""><span class="btn btn-outline-warning mt-3 over">Edit</span> </a>
+          <a href=""> <span class="btn btn-warning mt-3 over">Preview</span> </a>
+        </div>
       </div>
+
+      <div class="card text-center col-sm-5 col-lg-4 col-xxl-2 col-md-3" style="max-width: 30%;">
+        <div class="card-title">Courteous</div>
+        <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a href=""><span class="btn btn-outline-warning mt-3 over">Edit</span> </a>
+          <a href=""> <span class="btn btn-warning mt-3 over">Preview</span> </a>
+        </div>
+      </div>
+
+      <div class="card text-center col-sm-5 col-lg-4 col-xxl-2 col-md-3" style="max-width: 30%;">
+        <div class="card-title">Courteous</div>
+        <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a href=""><span class="btn btn-outline-warning mt-3 over">Edit</span> </a>
+          <a href=""> <span class="btn btn-warning mt-3 over">Preview</span> </a>
+        </div>
+      </div>
+
+      <div class="card text-center col-sm-5 col-lg-4 col-xxl-2 col-md-3" style="max-width: 30%;">
+        <div class="card-title">Courteous</div>
+        <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a href=""><span class="btn btn-outline-warning mt-3 over">Edit</span> </a>
+          <a href=""> <span class="btn btn-warning mt-3 over">Preview</span> </a>
+        </div>
+      </div>
+
+      <div class="card text-center col-sm-5 col-lg-4 col-xxl-2 col-md-3" style="max-width: 30%;">
+        <div class="card-title">Courteous</div>
+        <img class="card-img-top" src="../../assets/img/elements/17.jpg" alt="Card image cap">
+        <div class="card-body">
+          <a href=""><span class="btn btn-outline-warning mt-3 over">Edit</span> </a>
+          <a href=""> <span class="btn btn-warning mt-3 over">Preview</span> </a>
+        </div>
+      </div>
+
     </div>
+    <!-- Content end-->
   </div>
-  <!-- Content end-->
-</div>
-<!-- Content wrapper end -->
+  <!-- Content wrapper end -->
 
-<script>
+  <script>
 
-</script>
-@endsection
+  </script>
+  @endsection
