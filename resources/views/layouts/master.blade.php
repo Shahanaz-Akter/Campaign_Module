@@ -9,6 +9,11 @@
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 admin, bootstrap 5 design, bootstrap 5">
     <!-- Canonical SEO -->
     <link rel="canonical" href="https://1.envato.market/frest_admin">
+
+
+     <!-- asset1 css and js -->
+  
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
 
@@ -27,12 +32,10 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/flag-icons.css')}}" />
     <!-- date Picker -->
    
-
     <!-- Code editor css link -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/typography.css')}}" />
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/katex.css')}}" />
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/editor.css')}}" />
-
 
     <!-- Time Picker -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
@@ -124,6 +127,11 @@
     <!-- beautify ignore:end -->
 
 <style>
+    .color_org:hover {
+        color: #ff7e00 !important;
+
+    }
+
     .text_colr:hover {
         color: green !important;
         font-weight: bold;

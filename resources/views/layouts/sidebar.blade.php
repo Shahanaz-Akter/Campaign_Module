@@ -42,7 +42,7 @@
                 </li>
 
                 <li id="sms_campaigns" class="menu-item new_customer">
-                    <a href="{{url('/sms_items')}}" class="menu-link">
+                    <a href="{{url('/sms_campaigns')}}" class="menu-link">
                         <div>SMS Campaigns</div>
                     </a>
                 </li>
