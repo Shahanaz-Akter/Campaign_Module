@@ -127,6 +127,13 @@
     <!-- beautify ignore:end -->
 
 <style>
+    *,
+    ::after,
+    ::before {
+        margin: 0;
+        padding: 0;
+    }
+
     .color_org:hover {
         color: #ff7e00 !important;
 

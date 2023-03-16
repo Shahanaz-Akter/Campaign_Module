@@ -112,9 +112,16 @@ Route::get('/regular_based_post_campaigns', function () {
 Route::get('/rss_based_post_campaigns', function () {
     return view('Campaigns.Social_camp.rss_based_post_campaigns');
 });
+
+//Sms Campaigns Route
 Route::get('/sms_campaigns', function () {
     return view('Campaigns.Sms_camp.sms_campaigns');
 });
+Route::get('/view_sms_campaigns', function () {
+    return view('Campaigns.Sms_camp.view_sms_campaigns');
+});
+
+
 
 // Contacts Route
 Route::get('/all_contacts', function () {
