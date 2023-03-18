@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-<title>View SMS Campaigns</title>
+<title>Create SMS Campaigns</title>
 @endsection
 @section('content')
 

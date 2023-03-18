@@ -121,7 +121,9 @@ Route::get('/view_sms_campaigns', function () {
     return view('Campaigns.Sms_camp.view_sms_campaigns');
 });
 
-
+Route::get('/create_sms_campaigns', function () {
+    return view('Campaigns.Sms_camp.create_sms_campaigns');
+});
 
 // Contacts Route
 Route::get('/all_contacts', function () {

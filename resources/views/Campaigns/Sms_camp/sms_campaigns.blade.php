@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div>
-                <a href="{{url('/view_sms_campaigns')}}">
+                <a href="{{url('/create_sms_campaigns')}}">
                     <div class="btn btn-warning">Create Campaign</div>
                 </a>
             </div>
@@ -60,7 +60,7 @@
                     </thead>
 
                     <tbody class="">
-                        <tr class="color_org">
+                        <tr class="color_org dlt_single_message">
                             <td class="pe-4"><input type="checkbox"></td>
                             <td class="text-black color_org" style="font-size: 25px;">Subject: Meeting at 5pm <br>
                                 Date: Mar 12, 2022 15:00</td>
@@ -73,7 +73,7 @@
 
 
 
-                        <tr class="color_org">
+                        <tr class="color_org dlt_single_message">
                             <td class="pe-4"><input type="checkbox"></td>
                             <td class="text-black color_org" style="font-size: 25px;">Subject: Meeting at 3pm <br>
                                 Date: Mar 14, 2023 14:00</td>
@@ -87,7 +87,7 @@
                             </td>
                         </tr>
 
-                        <tr class="color_org">
+                        <tr class="color_org dlt_single_message">
                             <td class="pe-4"><input type="checkbox"></td>
                             <td class="text-black color_org" style="font-size: 25px;">Subject: Meeting at 5pm <br>
                                 Date: Mar 12, 2022 15:00</td>
@@ -127,7 +127,10 @@
 <!-- Content wrapper end -->
 
 <script>
+    let delete_all_btn = document.querySelector('delete-all-btn');
+    delete_all_btn.addEventListener('click', () => {
 
+    });
 </script>
 
 @endsection
