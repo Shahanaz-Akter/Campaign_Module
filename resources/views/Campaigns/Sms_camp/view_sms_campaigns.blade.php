@@ -37,11 +37,10 @@
                         <label class="col-md-1 col-sm-1 col-lg-1 col-xxl-1 fw-semibold text-muted" for="add_receipient">RECIPIENT</label>
                         <div class="col-md-10 col-sm-10 col-lg-10 col-xxl-10">
                             <div> Select the contacts to whom you are sending this SMS</div>
-                            <input type="text" class="form-control" id="add_receipient" placeholder="Add Receipient">
+                            <!-- <input type="text" class="form-control" id="add_receipient" placeholder="Add Receipient"> -->
                         </div>
                     </div>
                     <br>
-
                 </div>
 
 
@@ -50,12 +49,10 @@
                         <label class="col-md-1 col-sm-1 col-lg-1 col-xxl-1 fw-semibold text-muted" for="form">FROM</label>
                         <div class="col-md-10 col-sm-10 col-lg-10 col-xxl-10">
                             You need to add a sender address to send SMS campaigns using the Zoho Campaigns SMS gateway.
-                            <div> <input type="text" class="form-control" id="form" placeholder="Add Configure"></div>
+                            <!-- <div> <input type="text" class="form-control" id="form" placeholder="Add Configure"></div> -->
                         </div>
-
                     </div>
                     <br>
-
                 </div>
 
 
@@ -65,7 +62,7 @@
                         <label class="col-md-1 col-sm-1 col-lg-1 col-xxl-1 fw-semibold text-muted" for="sms_content">SMS CONTENT</label>
                         <div class="col-md-10 col-sm-10 col-lg-10 col-xxl-10">
                             <div>Provide content for your SMS campaign and proceed</div>
-                            <textarea type="text" class="form-control" id="sms_content" value="Configure Content"> </textarea>
+                            <!-- <textarea type="text" class="form-control" id="sms_content" value="Configure Content"> </textarea> -->
                         </div>
                     </div>
                 </div>

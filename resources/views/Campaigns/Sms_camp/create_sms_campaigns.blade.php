@@ -12,7 +12,7 @@
 
         <div class="d-flex justify-content-between mb-3 mt-5">
             <div>
-                <div></div> <span>Untitled SMS Campaign <br> Draft | Created on: Mar 18, 2023 10:59 AM</span>
+                <span>Untitled SMS Campaign <br> Draft | Created on: Mar 18, 2023 10:59 AM</span>
                 <a href="{{url('/edit_sms_campaigns')}}"><i class="fa-solid fa-pen-nib ms-4"></i></a>
             </div>
             <div class="mt-4"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-regular fa-trash-can"></i></a></div>
@@ -23,13 +23,12 @@
 
             <div class="d-flex justify-content-between mt-3">
                 <div> <span> <a href="{{url('/sms_campaigns')}}" class=""><-- </a> SMS Gateway</span>
-                    <i class="fa-solid fa-pen-nib ms-3"></i>
+                    <i class="fa-solid fa-pen-nib ms-3" style="font-size: 22px!important;"></i>
                     <span class="ms-3">Campaigns</span>
                 </div>
                 <div class="btn btn-outline-warning"><a href="" class="text-danger">Change</a></div>
             </div>
             <hr class="mb-5">
-
 
             <div class="row">
                 <div class="col-md-12 col-sm-12- col-lg-12 col-xxl-12 mb-2">
@@ -41,9 +40,7 @@
                         </div>
                     </div>
                     <br>
-
                 </div>
-
 
                 <div class="col-md-12 col-sm-12- col-lg-12 col-xxl-12 mb-2">
                     <div class="row">
@@ -55,10 +52,7 @@
 
                     </div>
                     <br>
-
                 </div>
-
-
 
                 <div class="col-md-12 col-sm-12- col-lg-12 col-xxl-12">
                     <div class="row">
@@ -92,9 +86,6 @@
     <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
-
-<script>
-
-</script>
+<script></script>
 
 @endsection
