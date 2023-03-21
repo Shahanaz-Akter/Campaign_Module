@@ -129,6 +129,10 @@ Route::get('/create_sms_campaigns', function () {
 Route::get('/all_contacts', function () {
     return view('Contacts.all_contacts');
 });
+Route::get('/edit_contacts', function () {
+    return view('Contacts.edit_contacts');
+});
+
 Route::get('/contact_scoring', function () {
     return view('Contacts.contact_scoring');
 });
