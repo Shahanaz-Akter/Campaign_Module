@@ -18,10 +18,13 @@
     <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
 
     <!-- slider css link -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/nouislider/nouislider.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/nouislider/nouislider.css')}}" />
 
     <!-- Modal Examples CSS Link-->
-    <link rel="stylesheet" href="{{asset('vendor/libs/animate-css/animate.css')}}"> 
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/animate-css/animate.css')}}"> 
+
+
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,50 +36,56 @@
     <!-- date Picker -->
    
     <!-- Code editor css link -->
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/typography.css')}}" />
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/katex.css')}}" />
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/editor.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/typography.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/katex.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/quill/editor.css')}}"/>
 
     <!-- Time Picker -->
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}"/>
 
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/theme-semi-dark.css')}}" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{asset('/assets/css/demo.css')}}" />
+    <!-- Core CSS -->scrollbar
+    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css"/>
+    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/theme-semi-dark.css')}}" class="template-customizer-theme-css"/>
+    <link rel="stylesheet" href="{{asset('/assets/css/demo.css')}}"/>
+
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/apex-charts/apex-charts.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/typeahead-js/typeahead.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/apex-charts/apex-charts.css')}}"/>
   
     <!-- Select2 class link -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/select2/select2.css')}} " />  
-    <link rel="stylesheet" href="{{asset('../../assets/vendor/libs/dropzone/dropzone.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/select2/select2.css')}} " />  
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/dropzone/dropzone.css')}}"/>
 
     <!-- Page CSS -->
     <!-- Tagigy css -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/tagify/tagify.css')}}" />
 
-    <!-- Data table CSS start-->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"/>
+    <!-- Data tables1 CSS start-->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"/> -->
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/select/1.5.0/css/select.dataTables.min.css"/> -->
 
-    <!-- Data tables -->
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}">
+    <!-- Data tables1 css -->
+    <!-- <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css')}}">
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/nouislider/nouislider.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/nouislider/nouislider.css')}}" /> -->
+
+
+   
+
+
 
     <!-- date range picker -->
     <link  href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
     <!-- Data table CSS end-->
 
     <!-- export button -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>  
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>   -->
 
     <!-- Helpers -->
     <script src="{{asset('/assets/vendor/js/helpers.js')}}"></script>
@@ -190,7 +199,6 @@
         color: #ef7615;
     }
 
-
     .all_campaign:hover {
         cursor: pointer;
         z-index: 5;
@@ -198,7 +206,6 @@
         transform: scale(1.1);
 
     }
-
 
     .icon_card:hover {
         cursor: pointer;
@@ -208,8 +215,6 @@
         transform: scale(1.1);
 
     }
-
-
 
     .over:hover {
         visibility: visible;
@@ -245,7 +250,6 @@
                     <div class="content-backdrop fade"></div>
                 </div>
                 <!-- Content wrap1er -->
-
             </div>
             <!-- / Layout page -->
         </div>
@@ -254,16 +258,22 @@
         <!-- Drag Target Area To SlideIn Menu On Small Screens -->
         <div class="drag-target"></div>
     </div>
-
     <!-- / Layout wrap1er -->
+
+
+
+
     <!-- buy now content with link -->
     <!--<div class="buy-now">
     <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
   </div> -->
     <!-- Core JS -->
 
-    <!-- Slider js -->
 
+
+
+
+    <!-- Slider js -->
     <script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
 
     <!-- build:js assets/vendor/js/core.js -->
@@ -298,8 +308,8 @@
 
 
     <!-- for data tables -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script> -->
 
     <!-- <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script> -->
     <!-- for data tables end -->
@@ -371,7 +381,7 @@
     </script>
 
 
-    <script src="{{asset('../../assets/vendor/libs/datatables-responsive/datatables.responsive.js')}}"></script>
+    <!-- <script src="{{asset('../../assets/vendor/libs/datatables-responsive/datatables.responsive.js')}}"></script>
     <script src="{{asset('../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js')}}"></script>
     <script src="{{asset('../../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js')}}"></script>
 
@@ -379,31 +389,18 @@
 
 
     <script src="{{asset('../../assets/vendor/libs/datatables-buttons/buttons.html5.js')}}"></script>
-    <script src="{{asset('../../assets/vendor/libs/datatables-buttons/buttons.print.js')}}"></script>
+    <script src="{{asset('../../assets/vendor/libs/datatables-buttons/buttons.print.js')}}"></script> -->
 
     <!-- Main JS -->
     <script src="{{asset('../../assets/js/main.js')}}"></script>
 
     <!-- Page JS -->
-    <script src="{{asset('../../assets/js/tables-datatables-basic.js')}}"></script>
+    <!-- <script src="{{asset('../../assets/js/tables-datatables-basic.js')}}"></script> -->
     <!-- multi Select -->
     <script>
         const mySelect = new mdb.Select(document.getElementById('mySelect'), options)
     </script>
-    <!-- jquery -->
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable({
-                dom: 'Bfrtip',
-                buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5',
-                    'pdfHtml5'
-                ]
-            });
-        });
-    </script>
+
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,4 +1,4 @@
-@extends('layouts.master')5
+@extends('layouts.master')
 @section('title')
 <title>All Contacts</title>
 @endsection
@@ -90,6 +90,28 @@
                     <td class="pe-5 single_data ">Pending</td>
                     <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
                 </tr>
+                <tr class="mb-5">
+                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-2 invisible"></i></a></td>
+                    <td class="pe-5 single_data ">Sefali</td>
+                    <td class="pe-5 single_data ">Begum</td>
+                    <td class="pe-5 single_data ">Ztrios</td>
+                    <td class="pe-5 single_data ">010197226</td>
+                    <td class="pe-5 single_data ">++7226</td>
+                    <td class="pe-5 single_data ">Pending</td>
+                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                </tr>
+                <tr class="mb-5">
+                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-2 invisible"></i></a></td>
+                    <td class="pe-5 single_data ">Sefali</td>
+                    <td class="pe-5 single_data ">Begum</td>
+                    <td class="pe-5 single_data ">Ztrios</td>
+                    <td class="pe-5 single_data ">010197226</td>
+                    <td class="pe-5 single_data ">++7226</td>
+                    <td class="pe-5 single_data ">Pending</td>
+                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                </tr>
 
             </tbody>
         </table>
@@ -122,12 +144,10 @@
         <div class="modal-content p-3 p-md-5">
             <div class="modal-body">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
                 <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
-
-
                 <form class="row g-3">
                     @csrf
+
                     <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
                         <div class="row">
                             <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
@@ -196,6 +216,254 @@
                         </div>
                     </div>
 
+
+                    <div class="col-12 ms-4 mt-4">
+                        <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
+                        <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End edit Modal -->
+
+<!-- filtering3 Modal -->
+<div class="modal fade" id="filtering3" tabindex="-1" aria-hidden="true">
+    <div class="modal-lg  modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+        <div class="modal-content p-3 p-md-5">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div> -->
+
+                <form class="row g-3">
+                    @csrf
+                    <!-- Form with Tabs -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="card-header border-bottom">
+                                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#form-tabs-personal" role="tab" aria-selected="true">PersonaContact Info</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link " data-bs-toggle="tab" data-bs-target="#form-tabs-account" role="tab" aria-selected="false">Contact Basic Details</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#form-tabs-social" role="tab" aria-selected="false">More Details</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#form-tabs-social" role="tab" aria-selected="false">Social information</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+                                    <!-- Contact Info -->
+                                    <div class="tab-pane fade active show" id="form-tabs-personal" role="tabpanel">
+
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-first-name">Contact Email</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-first-name" class="form-control" placeholder="John" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-last-name">Mobile</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-last-name" class="form-control" placeholder="Doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Contact Basic Details -->
+                                    <div class="tab-pane fade" id="form-tabs-account" role="tabpanel">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Title</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">First Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Last Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Job Title</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Company Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Status</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--More Details -->
+                                    <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-twitter">Secondary Email Address</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-twitter" class="form-control" placeholder="https://twitter.com/abc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-facebook">contact Source</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-facebook" class="form-control" placeholder="https://facebook.com/abc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-google">Google+</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-google" class="form-control" placeholder="https://plus.google.com/abc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-linkedin">Address</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-linkedin" class="form-control" placeholder="https://linkedin.com/abc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-instagram">City</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-instagram" class="form-control" placeholder="https://instagram.com/abc" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">State</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Zip Code</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Country</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">State</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Website Address</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Note</label>
+                                                    <div class="col-sm-9">
+                                                        <textarea type="text" id="formtabs-quora" class="form-control" placeholder=""></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Social Information -->
+                                    <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-twitter">Twitter handle</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-twitter" class="form-control" placeholder="Twitter handle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-facebook">Facebook Handle</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-facebook" class="form-control" placeholder="Facebook Handle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-google">LinkedIn Handle</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" id="formtabs-google" class="form-control" placeholder="LinkedIn Handle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-12 ms-4 mt-4">
                         <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
