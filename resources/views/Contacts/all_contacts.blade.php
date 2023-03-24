@@ -1,517 +1,756 @@
-@extends('layouts.master')
-@section('title')
-<title>All Contacts</title>
-@endsection
-@section('content')
+<!DOCTYPE html>
+<!-- beautify ignore:start -->
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="/assets/" data-template="vertical-menu-template-semi-dark">
 
-<!-- Content wrapper start -->
-<div class="content-wrapper">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <!-- Content start-->
-    <div class="container-sm container-md container-lg container-xxl">
+    <title>Contact List</title>
+    
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
+    <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 admin, bootstrap 5 design, bootstrap 5">
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://1.envato.market/frest_admin">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
 
-        <div class="d-flex justify-content-start gap-2 mt-3">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-            <div class="p-2 btn-group bg-white">
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/boxicons.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/fontawesome.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/fonts/flag-icons.css')}}" />
 
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-tag me-2"></i> Assign Tags</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">Action</a></li>
-                    <li><a class="dropdown-item" href="">Another action</a></li>
-                    <li><a class="dropdown-item" href="">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="">Separated link</a></li>
-                </ul>
-            </div>
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/css/rtl/theme-semi-dark.css')}}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{asset('/assets/css/demo.css')}}" />
 
-            <div class="p-2 bg-white">
-                <div type="button" data-bs-toggle="modal" data-bs-target="#filtering1"><i class="fa-solid fa-flag me-2"></i> Assign Topics</div>
-            </div>
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/apex-charts/apex-charts.css')}}" />
 
-            <!-- <a href="{{url('/delete')}}"><i class="fa-solid fa-trash-can text-danger"></i></a> -->
-        </div>
+    <!-- Page CSS -->
+    
+    <!-- Helpers -->
+    <script src="{{asset('/assets/vendor/js/helpers.js')}}"></script>
 
-        <!-- <div class="color_org text-black fs-4 " style="font-size: 20px;">Sent Message List</div> -->
-        <!-- code start -->
-        <div class="row mt-3 gap-3 mb-4">
-            <div class="col-md-5 col-lg-5 col-xxl-5 col-sm-5">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <div class="col-md-2 col-lg-2 col-xxl-2 col-sm-2">
-                <label for="dlt_all" class="text-start ms-0">Delete All</label>
-                <a href="{{url('/delete_all_sms_campaigns')}}" id="delete_button"><i class="fa-solid fa-trash-can text-danger ms-3" style="font-size:22
-                px!important;"></i></a>
-            </div>
-        </div>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="{{asset('/assets/vendor/js/template-customizer.js')}}"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{asset('/assets/js/config.js')}}"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <!-- Custom notification for demo -->
+    <!-- beautify ignore:end -->
 
+<!-- Data tables2 css-->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+</head>
 
-        <table id="example" class="mt-2 display" style="width:100%">
-            <thead class="">
-                <span class="">10 Contacts are Selected</span>
-                <hr>
-                <tr class="mb-5">
-                    <th><input type="checkbox" class="form-check-input dlt_all"></th>
-                    <th class="pe-5">Contact Email</th>
-                    <th class="pe-5">First Name</th>
-                    <th class="pe-5">Last Name</th>
-                    <th class="pe-5">Company Name</th>
-                    <th class="pe-5">Phone</th>
-                    <th class="pe-5">Mobile</th>
-                    <th class="pe-5">Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
+<body>
+    <!-- Layout wrap1er start -->
+    <div class="layout-wrap1er layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+            @include('layouts.sidebar')
+            <!-- / Menu -->
+            <!-- Layout container -->
+            <div class="layout-page">
 
-            <tbody class="mt-5">
+                <!-- Navbar -->
+                @include('layouts.header')
+                <!-- / Navbar -->
+                <!--Strat Content wrap1er -->
+                <div class="content-wrap1er">
 
-                <tr class="mb-5">
-                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <i class="fa-solid fa-pen text-black ms-2 invisible" data-bs-toggle="modal" data-bs-target="#filtering2"></i></td>
-                    <td class="pe-5 single_data ">Sefali</td>
-                    <td class="pe-5 single_data ">Begum</td>
-                    <td class="pe-5 single_data ">Ztrios</td>
-                    <td class="pe-5 single_data ">010197226</td>
-                    <td class="pe-5 single_data ">++7226</td>
-                    <td class="pe-5 single_data ">Pending</td>
-                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
-                </tr>
-
-                <tr class="mb-5">
-                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-2 invisible"></i></a></td>
-                    <td class="pe-5 single_data ">Sefali</td>
-                    <td class="pe-5 single_data ">Begum</td>
-                    <td class="pe-5 single_data ">Ztrios</td>
-                    <td class="pe-5 single_data ">010197226</td>
-                    <td class="pe-5 single_data ">++7226</td>
-                    <td class="pe-5 single_data ">Pending</td>
-                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
-                </tr>
-                <tr class="mb-5">
-                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-2 invisible"></i></a></td>
-                    <td class="pe-5 single_data ">Sefali</td>
-                    <td class="pe-5 single_data ">Begum</td>
-                    <td class="pe-5 single_data ">Ztrios</td>
-                    <td class="pe-5 single_data ">010197226</td>
-                    <td class="pe-5 single_data ">++7226</td>
-                    <td class="pe-5 single_data ">Pending</td>
-                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
-                </tr>
-                <tr class="mb-5">
-                    <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                    <td class="pe-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-2 invisible"></i></a></td>
-                    <td class="pe-5 single_data ">Sefali</td>
-                    <td class="pe-5 single_data ">Begum</td>
-                    <td class="pe-5 single_data ">Ztrios</td>
-                    <td class="pe-5 single_data ">010197226</td>
-                    <td class="pe-5 single_data ">++7226</td>
-                    <td class="pe-5 single_data ">Pending</td>
-                    <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <div class="d-flex justify-content-start gap-3">
-            <!-- flex child-1 -->
-            <div>
-                <a href="{{url('/')}}">
-                    <div class="btn btn-outline-warning mt-5">
-                        Previous
-                    </div>
-                </a>
-            </div>
-
-            <!-- flex child-2 -->
-            <div class="mt-5">
-                <button type="submit" class="btn btn-warning">Save</button>
-            </div>
-        </div>
-        <!-- code end -->
-    </div>
-    <!-- Content end-->
-</div>
-<!-- Content wrapper end -->
+                    <!-- Content -->
 
 
-<!-- Start Modal -->
-<div class="modal fade" id="filtering1" tabindex="-1" aria-hidden="true">
-    <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
-        <div class="modal-content p-3 p-md-5">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
-                <form class="row g-3">
-                    @csrf
+                    <!-- Content wrapper start -->
+                    <div class="content-wrapper">
+                        <!-- Content start-->
+                        <div class="container-sm container-md container-lg container-xxl">
 
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
-                        <div class="row">
-                            <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                            <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                <select class="select2 form-select">
-                                    <option value="">Select</option>
-                                    <option value="AK">Alaska</option>
-                                    <option value="WV">West Virginia</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
-                        <div class="row">
-                            <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                            <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                <input type="text" class="form-control" placeholder="Monu vat khaiso?">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 ms-4 mt-4">
-                        <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
-                        <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Modal -->
-
-<!-- Start edit Modal -->
-<div class="modal fade" id="filtering2" tabindex="-1" aria-hidden="true">
-    <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
-        <div class="modal-content p-3 p-md-5">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
-
-                <form class="row g-3">
-                    @csrf
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
-                        <div class="row">
-                            <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                            <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                <select class="select2 form-select">
-                                    <option value="">Select</option>
-                                    <option value="AK">Alaska</option>
-                                    <option value="WV">West Virginia</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
-                        <div class="row">
-                            <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                            <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                <input type="text" class="form-control" placeholder="Monu vat khaiso?">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 ms-4 mt-4">
-                        <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
-                        <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End edit Modal -->
-
-<!-- filtering3 Modal -->
-<div class="modal fade" id="filtering3" tabindex="-1" aria-hidden="true">
-    <div class="modal-lg  modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
-        <div class="modal-content p-3 p-md-5">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <!-- <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div> -->
-
-                <form class="row g-3">
-                    @csrf
-                    <!-- Form with Tabs -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-header border-bottom">
-                                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
-                                        <li class="nav-item">
-                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#form-tabs-personal" role="tab" aria-selected="true">PersonaContact Info</button>
+                            <div class="d-flex justify-content-start gap-2 mt-3">
+                                <div class="p-2 btn-group bg-white">
+                                    <div type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-tag me-3"></i> Assign Tags</div>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="">Action</a></li>
+                                        <li><a class="dropdown-item" href="">Another action</a></li>
+                                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
                                         </li>
-                                        <li class="nav-item">
-                                            <button class="nav-link " data-bs-toggle="tab" data-bs-target="#form-tabs-account" role="tab" aria-selected="false">Contact Basic Details</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#form-tabs-social" role="tab" aria-selected="false">More Details</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#form-tabs-social" role="tab" aria-selected="false">Social information</button>
-                                        </li>
+                                        <li><a class="dropdown-item" href="">Separated link</a></li>
                                     </ul>
                                 </div>
 
-                                <div class="tab-content">
-                                    <!-- Contact Info -->
-                                    <div class="tab-pane fade active show" id="form-tabs-personal" role="tabpanel">
+                                <div class="p-2 bg-white">
+                                    <div type="" class="btn" data-bs-toggle="modal" data-bs-target="#filtering1"> <i class="fa-solid fa-flag me-3"></i> Assign Topics</div>
+                                </div>
+                                <div class="btn p-2">
+                                    <div class="btn p-2">
+                                        <label for="dlt_all" class="">Delete All</label>
+                                        <a href="{{url('/delete_all_sms_campaigns')}}">
+                                            <i class="d_sn fa-solid fa-trash-can text-danger d-none ms-3" style="font-size:17px!important;"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-first-name">Contact Email</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-first-name" class="form-control" placeholder="John" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-last-name">Mobile</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-last-name" class="form-control" placeholder="Doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Contact Basic Details -->
-                                    <div class="tab-pane fade" id="form-tabs-account" role="tabpanel">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Title</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">First Name</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Last Name</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Job Title</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Company Name</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-username">Status</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-username" class="form-control" placeholder="john.doe" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <!-- <a href="{{url('/delete')}}"><i class="fa-solid fa-trash-can text-danger"></i></a> -->
+                            </div>
+                            <br>
+                            <table id="example" class="display nowrap" style="width:100%;">
+                                <thead>
+                                    <!-- <span class="">10 Contacts are Selected</span> -->
 
-                                    <!--More Details -->
-                                    <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-twitter">Secondary Email Address</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-twitter" class="form-control" placeholder="https://twitter.com/abc" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-facebook">contact Source</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-facebook" class="form-control" placeholder="https://facebook.com/abc" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-google">Google+</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-google" class="form-control" placeholder="https://plus.google.com/abc" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-linkedin">Address</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-linkedin" class="form-control" placeholder="https://linkedin.com/abc" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-instagram">City</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-instagram" class="form-control" placeholder="https://instagram.com/abc" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">State</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Zip Code</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Country</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">State</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Website Address</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-quora" class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-quora">Note</label>
-                                                    <div class="col-sm-9">
-                                                        <textarea type="text" id="formtabs-quora" class="form-control" placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <tr class="mb-5">
+                                        <th><input type="checkbox" class="form-check-input dlt_all"></th>
+                                        <th class="pb-3">Contact Email</th>
+                                        <th class="pb-3">First Name</th>
+                                        <th class="pb-3">Last Name</th>
+                                        <th class="pb-3">Company Name</th>
+                                        <th class="pb-3">Phone</th>
+                                        <th class="pb-3">Mobile</th>
+                                        <th class="pb-3">Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">kada@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
 
-                                    <!-- Social Information -->
-                                    <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-twitter">Twitter handle</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-twitter" class="form-control" placeholder="Twitter handle" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-facebook">Facebook Handle</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-facebook" class="form-control" placeholder="Facebook Handle" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="row">
-                                                    <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-google">LinkedIn Handle</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="formtabs-google" class="form-control" placeholder="LinkedIn Handle" />
-                                                    </div>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">rifatvaiya@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mosha@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mimibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">shoili@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">telapoka@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">ashrafvaiya@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                    <tr class="mb-5">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">luna@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3 single_data ">Sefali</td>
+                                        <td class="pb-3 single_data ">Begum</td>
+                                        <td class="pb-3 single_data ">Ztrios</td>
+                                        <td class="pb-3 single_data ">010197226</td>
+                                        <td class="pb-3 single_data ">++7226</td>
+                                        <td class="pb-3 single_data ">Pending</td>
+                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+
+
+                            <div class="d-flex justify-content-start gap-3">
+                                <!-- flex child-1 -->
+                                <div>
+                                    <a href="{{url('/')}}">
+                                        <div class="btn btn-outline-warning mt-5">
+                                            Previous
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- flex child-2 -->
+                                <div class="mt-5">
+                                    <button type="submit" class="btn btn-warning">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- / Content -->
+                    <!-- Footer will be placed here -->
+
+
+                    <!-- Start filtering1 Modal -->
+                    <div class="modal fade" id="filtering1" tabindex="-1" aria-hidden="true">
+                        <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+                            <div class="modal-content p-3 p-md-5">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
+
+                                    <form class="row g-3">
+                                        @csrf
+                                        <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
+                                            <div class="row">
+                                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
+                                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
+                                                    <select class="select2 form-select">
+                                                        <option value="">Select</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="WV">West Virginia</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <br>
+
+                                        <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
+                                            <div class="row">
+                                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
+                                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
+                                                    <input type="text" class="form-control" placeholder="Monu vat khaiso?">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 ms-4 mt-4">
+                                            <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
+                                            <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- End filtering1 Modal -->
 
-                    <div class="col-12 ms-4 mt-4">
-                        <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
-                        <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <!-- Start edit filtering2 Modal -->
+                    <div class="modal fade" id="filtering2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+                            <div class="modal-content p-3 p-md-5">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
+
+                                    <form class="row g-3">
+                                        @csrf
+                                        <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
+                                            <div class="row">
+                                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
+                                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
+                                                    <select class="select2 form-select">
+                                                        <option value="">Select</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="WV">West Virginia</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
+                                            <div class="row">
+                                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
+                                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
+                                                    <input type="text" class="form-control" placeholder="Monu vat khaiso?">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 ms-4 mt-4">
+                                            <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
+                                            <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                    <!-- End edit filtering2 Modal -->
+
+                    <!-- filtering3 Modal -->
+                    <div class="modal fade" id="filtering3" tabindex="-1" aria-hidden="true">
+                        <div class="modal-lg  modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+                            <div class="modal-content p-3 p-md-5">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    <div class="d-flex justify-content-around">
+                                        <div class="btn btn-info contact_danger">Contact Info</div>
+                                        <div class="btn btn-primary contact_basic_primary">Contact Basic Details</div>
+                                        <div class="btn btn-warning more_details">More Details</div>
+                                        <div class="btn btn-danger social_info">Social Information</div>
+                                    </div>
+
+                                    <form action="" method="post">
+                                        @csrf
+                                        <div class="row">
+                                            <!-- Contact Info -->
+                                            <section class="mt-4 contact_info" onclick="contact_info()">
+                                                <div class="mb-4">
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Contact Email</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <input type="text" class="form-control" placeholder="Enter Contact Email" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Mobile</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <!-- Contact Basic Details-->
+                                            <section class="mt-4 d-none contact_basic_details" onclick="contact_basic_details()">
+                                                <div class="mb-4">
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Title</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <input type="text" class="form-control" placeholder="Enter Contact Email" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">First Name</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Last Name</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Company Name</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Phone</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <!-- More Details -->
+                                            <section class="mt-4 d-none more_details" onclick="more_details()">
+                                                <div class=" mb-4">
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Secondary Email Adrress</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Contact Source</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <select id="alignment-country" class="select2 form-select" data-allow-clear="true">
+                                                                <option value="">Select</option>
+                                                                <option value="Australia">Australia</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Address</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">City</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">State</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Zip Code</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Address</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Country</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Website Address</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Note</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <textarea type="text" class="form-control" value="Configure Content"> </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+                                            <!-- Social Info -->
+                                            <section class="mt-4 d-none social_info" onclick="social_info()">
+                                                <div class=" mb-4">
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Twitter Handle</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Facebook Handle</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mb-3">
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">LinkedIn Handle</label>
+                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <!-- <hr class="my-4 mx-n4" /> -->
+                                            <div class="pt-4">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-sm-9">
+                                                        <button type="submit" class="btn btn-primary me-sm-2 me-1">Submit</button>
+                                                        <button type="reset" class="btn btn-label-secondary">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End edit Modal -->
+    <!-- filtering3 Modal end-->
+    </div>
+    <!-- Content wrap1er -->
+    </div>
+    <!-- / Layout page -->
+    </div>
+    </div>
+    <!-- Layout wrap1er end -->
 
-<script>
-    let delete_all = document.querySelector('.dlt_all');
-    console.log(delete_all);
+    <!-- mouseover and mouseout js -->
+    <script>
+        let delete_all = document.querySelector('.dlt_all');
+        console.log(delete_all)
+        let dlt_single_message = document.querySelectorAll('.dlt_single_message');
+        console.log(dlt_single_message);
 
-    let dlt_single_message = document.querySelectorAll('.dlt_single_message');
-    console.log(dlt_single_message);
 
-    delete_all.addEventListener('change', function() {
+        delete_all.addEventListener('change', function() {
+            let d_sn = document.querySelector('.d_sn');
+            let tr = d_sn.classList.contains('d-none');
+            console.log(tr);
+            if (tr) {
+                d_sn.classList.remove('d-none');
 
-        dlt_single_message.forEach(function(val) {
-            val.checked = delete_all.checked;
+            } else {
+                d_sn.classList.add('d-none');
+            }
+
+
+            dlt_single_message.forEach(function(val) {
+
+                val.checked = delete_all.checked;
+            });
         });
-    });
 
 
-    const Mouse_over = (single_data) => {
-        console.log(single_data.children);
-        let value = single_data.children[0].children[0];
-        console.log(value);
+        const Mouse_over = (single_data) => {
+            console.log(single_data.children);
+            let value = single_data.children[0].children[0];
+            console.log(value);
 
-        if (value.classList.contains('invisible')) {
-            value.classList.remove('invisible');
+            if (value.classList.contains('invisible')) {
+                value.classList.remove('invisible');
+            }
+
         }
 
-    }
+        const Mouse_out = (single_data1) => {
 
-    const Mouse_out = (single_data1) => {
-
-        let value1 = single_data1.children[0].children[0];
-        console.log(value1);
-        let fa = !(value1.classList.contains('invisible'));
-        if (fa) {
-            value1.classList.add('invisible');
+            let value1 = single_data1.children[0].children[0];
+            console.log(value1);
+            let fa = !(value1.classList.contains('invisible'));
+            if (fa) {
+                value1.classList.add('invisible');
+            }
         }
+    </script>
+    <script>
+        
+        const contact_basic_details = () => {
+            let contact_info = document.querySelector('.contact_info');
+            let contact_basic_details = document.querySelector('.contact_basic_details');
+            let more_details = document.querySelector('.more_details');
+            let social_info = document.querySelector('.social_info');
 
-    }
-</script>
+            let contact_info_tr = contact_info.classList.contains(d - none);
+            let contact_basic_details_tr = contact_basic_details.classList.contains(d - none);
+            console.log(contact_basic_details_tr);
+            
+            let more_details_tr = more_details.classList.contains(d - none);
+            let social_info_tr = social_info.classList.contains(d - none);
 
-@endsection
+            if(contact_basic_details_tr){
+                contact_basic_details.classList.remove(d - none);
+                contact_info.classList.add(d - none);
+                more_details.classList.add(d - none);
+                social_info.classList.add(d - none);
+            }
+
+        }
+        
+        
+        const contact_info = () => {
+            let contact_info = document.querySelector('.contact_info');
+            let contact_basic_details = document.querySelector('.contact_basic_details');
+            let more_details = document.querySelector('.more_details');
+            let social_info = document.querySelector('.social_info');
+            
+            let contact_info_tr = contact_info.classList.contains(d - none);
+            let contact_basic_details_tr = contact_basic_details.classList.contains(d - none);
+            let more_details_details_tr = more_details.classList.contains(d - none);
+            let social_info_tr = social_info.classList.contains(d - none);
+
+           
+
+        }
+        
+        const more_details = () => {
+            let contact_info = document.querySelector('.contact_info');
+            let contact_basic_details = document.querySelector('.contact_basic_details');
+            let more_details = document.querySelector('.more_details');
+            let social_info = document.querySelector('.social_info');
+
+        }
+        const social_info = () => {
+            let contact_info = document.querySelector('.contact_info');
+            let contact_basic_details = document.querySelector('.contact_basic_details');
+            let more_details = document.querySelector('.more_details');
+            let social_info = document.querySelector('.social_info');
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- Javascropt link for header, navbar, content and footer style -->
+    <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/popper/popper.js')}}"></script>
+    <script src="{{asset('/assets/vendor/js/bootstrap.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
+
+    <script src="{{asset('/assets/vendor/libs/hammer/hammer.js')}}"></script>
+
+
+    <script src="{{asset('/assets/vendor/libs/i18n/i18n.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>
+
+    <script src="{{asset('/assets/vendor/js/menu.js')}}"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="{{asset('/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
+
+    <!-- Main JS -->
+    <script src="{{asset('/assets/js/main.js')}}"></script>
+
+    <!-- Page JS -->
+    <script src="{{asset('/assets/js/dashboards-analytics.js')}}"></script>
+
+    <!-- Data tables2 Js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+
+    <!-- Data tables2 Jquery-->
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
