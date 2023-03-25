@@ -145,68 +145,68 @@
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">kada@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">kada@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
 
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">rifatvaiya@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">rifatvaiya@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mosha@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mosha@gmail.com<span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mimibegumimo@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">mimibegumimo@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></i></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">shoili@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">shoili@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
                                         <td class="pb-3 single_data ">010197226</td>
                                         <td class="pb-3 single_data ">++7226</td>
                                         <td class="pb-3 single_data ">Pending</td>
-                                        <td class="text-center"><a href="{{url('/delete_sms_campaigns')}}"><i class="fa-solid fa-trash-can text-danger"></i></a></td>
+                                        <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
                                     </tr>
 
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">telapoka@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">telapoka@gmail.com<span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
@@ -217,7 +217,7 @@
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">ashrafvaiya@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">ashrafvaiya@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
@@ -228,7 +228,7 @@
                                     </tr>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">luna@gmail.com <a href="{{url('/edit_contact')}}"><i class="fa-solid fa-pen text-black ms-3 invisible"></i></a></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">luna@gmail.com<span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>
@@ -362,28 +362,27 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                                     <div class="d-flex justify-content-around">
-                                        <div class="btn btn-info contact_danger">Contact Info</div>
-                                        <div class="btn btn-primary contact_basic_primary">Contact Basic Details</div>
-                                        <div class="btn btn-warning more_details">More Details</div>
-                                        <div class="btn btn-danger social_info">Social Information</div>
+                                        <div class="btn btn-info" onclick="contact_infor()">Contact Info</div>
+                                        <div class="btn btn-primary" onclick="contact_basic_detail()">Contact Basic Details</div>
+                                        <div class="btn btn-warning" onclick="more_detail()">More Details</div>
+                                        <div class="btn btn-danger" onclick="social_infor()">Social Information</div>
                                     </div>
-
                                     <form action="" method="post">
                                         @csrf
                                         <div class="row">
                                             <!-- Contact Info -->
-                                            <section class="mt-4 contact_info" onclick="contact_info()">
+                                            <section class="mt-4 contact_info">
                                                 <div class="mb-4">
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Contact Email</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-username">Contact Email</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <input type="text" class="form-control" placeholder="Enter Contact Email" />
                                                         </div>
                                                     </div>
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Mobile</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Mobile</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <div class="input-group input-group-merge">
                                                                 <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
@@ -395,18 +394,18 @@
                                             </section>
 
                                             <!-- Contact Basic Details-->
-                                            <section class="mt-4 d-none contact_basic_details" onclick="contact_basic_details()">
+                                            <section class="mt-4 d-none contact_basic_details">
                                                 <div class="mb-4">
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Title</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-username">Title</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <input type="text" class="form-control" placeholder="Enter Contact Email" />
                                                         </div>
                                                     </div>
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">First Name</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">First Name</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <div class="input-group input-group-merge">
                                                                 <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
@@ -415,7 +414,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Last Name</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Last Name</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <div class="input-group input-group-merge">
                                                                 <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
@@ -424,7 +423,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Company Name</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Company Name</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <div class="input-group input-group-merge">
                                                                 <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
@@ -433,7 +432,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Phone</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Phone</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <div class="input-group input-group-merge">
                                                                 <input type="text" id="alignment-email" class="form-control" placeholder="Enter Mobile" aria-label="" aria-describedby="" />
@@ -444,146 +443,158 @@
                                             </section>
 
                                             <!-- More Details -->
-                                            <section class="mt-4 d-none more_details" onclick="more_details()">
-                                                <div class=" mb-4">
+                                            <section class="mt-4 d-none more_details">
+                                                <div class="mb-4">
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Secondary Email Adrress</label>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-username">Secondary Email Adrress</label>
                                                         <div class="col-sm-9 col-lg-9 col-xxl-9">
                                                             <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
                                                         </div>
                                                     </div>
 
                                                     <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Contact Source</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <select id="alignment-country" class="select2 form-select" data-allow-clear="true">
-                                                                <option value="">Select</option>
-                                                                <option value="Australia">Australia</option>
+                                                        <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="Contact_Source">Contact Source</label>
+                                                        <div id="Contact_Source" class="col-sm-9 col-lg-9 col-xxl-9">
+
+
+                                                            <select id="formtabs-country" class="select2 form-select">
+                                                                <option value="">---Select---</option>
+                                                                <option value="">sefalibegumimo@gmail.com</option>
+                                                                <option value="Australia">mimo@gmail.com</option>
+                                                                <option value="United Arab Emirates">imo@gmail.com</option>
                                                             </select>
+                                                            <div class="h-100" id="parent_div">
+                                                                <div class="text-center text-muted border-1 bg-white" onclick="sender()">Add New Source</div>
+                                                                <div class="h-50" id="divv">
+                                                                    <!-- Create sender address label and div using JS -->
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Address</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                    </div>
+                                                </div>
 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">City</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Address</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">State</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Zip Code</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Address</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Country</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Website Address</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">Note</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <textarea type="text" class="form-control" value="Configure Content"> </textarea>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">City</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
 
-
-                                            <!-- Social Info -->
-                                            <section class="mt-4 d-none social_info" onclick="social_info()">
-                                                <div class=" mb-4">
-
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Twitter Handle</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-username">Facebook Handle</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row mb-3">
-                                                        <label class="col-sm-3 col-lg-3 col-xxl-3 col-form-label text-sm-end" for="alignment-email">LinkedIn Handle</label>
-                                                        <div class="col-sm-9 col-lg-9 col-xxl-9">
-                                                            <div class="input-group input-group-merge">
-                                                                <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">State</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
 
-                                            <!-- <hr class="my-4 mx-n4" /> -->
-                                            <div class="pt-4">
-                                                <div class="row justify-content-end">
-                                                    <div class="col-sm-9">
-                                                        <button type="submit" class="btn btn-primary me-sm-2 me-1">Submit</button>
-                                                        <button type="reset" class="btn btn-label-secondary">Cancel</button>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Zip Code</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Address</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Country</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Website Address</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">Note</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <textarea type="text" class="form-control" value="Configure Content"> </textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </section>
+
+
+                                        <!-- Social Info -->
+                                        <section class="mt-4 d-none social_info">
+                                            <div class=" mb-4">
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-username">Twitter Handle</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-username">Facebook Handle</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <input type="text" id="alignment-username" class="form-control" placeholder="sefalibegumimo@gmail.com" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <label class="col-sm-3 col-lg-3 col-xxl-3  text-sm-end" for="alignment-email">LinkedIn Handle</label>
+                                                    <div class="col-sm-9 col-lg-9 col-xxl-9">
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" id="alignment-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="alignment-email2" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!-- <hr class="my-4 mx-n4" /> -->
+                                        <div class="pt-4">
+                                            <div class="row justify-content-end">
+                                                <div class="col-sm-9">
+                                                    <button type="submit" class="btn btn-primary me-sm-2 me-1">Submit</button>
+                                                    <button type="reset" class="btn btn-label-secondary">Cancel</button>
                                                 </div>
                                             </div>
                                         </div>
                                 </div>
-                                </form>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- filtering3 Modal end-->
     </div>
@@ -642,69 +653,152 @@
             }
         }
     </script>
+
+
     <script>
-        
-        const contact_basic_details = () => {
-            let contact_info = document.querySelector('.contact_info');
-            let contact_basic_details = document.querySelector('.contact_basic_details');
-            let more_details = document.querySelector('.more_details');
-            let social_info = document.querySelector('.social_info');
+        let contact_info = document.querySelector('.contact_info');
+        let contact_basic_details = document.querySelector('.contact_basic_details');
+        let more_details = document.querySelector('.more_details');
+        let social_info = document.querySelector('.social_info');
 
-            let contact_info_tr = contact_info.classList.contains(d - none);
-            let contact_basic_details_tr = contact_basic_details.classList.contains(d - none);
+
+        const contact_basic_detail = () => {
+
+            console.log(contact_basic_details);
+            let contact_basic_details_tr = contact_basic_details.classList.contains('d-none');
             console.log(contact_basic_details_tr);
-            
-            let more_details_tr = more_details.classList.contains(d - none);
-            let social_info_tr = social_info.classList.contains(d - none);
 
-            if(contact_basic_details_tr){
-                contact_basic_details.classList.remove(d - none);
-                contact_info.classList.add(d - none);
-                more_details.classList.add(d - none);
-                social_info.classList.add(d - none);
+            if (contact_basic_details_tr) {
+                contact_basic_details.classList.remove('d-none');
+                contact_info.classList.add('d-none');
+                more_details.classList.add('d-none');
+                social_info.classList.add('d-none');
+
             }
 
-        }
-        
-        
-        const contact_info = () => {
-            let contact_info = document.querySelector('.contact_info');
-            let contact_basic_details = document.querySelector('.contact_basic_details');
-            let more_details = document.querySelector('.more_details');
-            let social_info = document.querySelector('.social_info');
-            
-            let contact_info_tr = contact_info.classList.contains(d - none);
-            let contact_basic_details_tr = contact_basic_details.classList.contains(d - none);
-            let more_details_details_tr = more_details.classList.contains(d - none);
-            let social_info_tr = social_info.classList.contains(d - none);
-
-           
 
         }
-        
-        const more_details = () => {
-            let contact_info = document.querySelector('.contact_info');
-            let contact_basic_details = document.querySelector('.contact_basic_details');
-            let more_details = document.querySelector('.more_details');
-            let social_info = document.querySelector('.social_info');
 
+        const more_detail = () => {
+
+            console.log(more_details);
+            let more_details_tr = more_details.classList.contains('d-none');
+            console.log(more_details_tr);
+
+            if (more_details_tr) {
+                more_details.classList.remove('d-none');
+                contact_info.classList.add('d-none');
+                contact_basic_details.classList.add('d-none');
+                social_info.classList.add('d-none');
+
+            }
         }
-        const social_info = () => {
-            let contact_info = document.querySelector('.contact_info');
-            let contact_basic_details = document.querySelector('.contact_basic_details');
-            let more_details = document.querySelector('.more_details');
-            let social_info = document.querySelector('.social_info');
 
+        const social_infor = () => {
+
+            console.log(social_info);
+            let social_info_tr = social_info.classList.contains('d-none');
+            console.log(social_info_tr);
+
+            if (social_info_tr) {
+                social_info.classList.remove('d-none');
+                contact_info.classList.add('d-none');
+                more_details.classList.add('d-none');
+                contact_basic_details.classList.add('d-none');
+
+            }
+        }
+
+        const contact_infor = () => {
+
+            console.log(contact_info);
+            let contact_info_tr = contact_info.classList.contains('d-none');
+            console.log(contact_info_tr);
+
+            if (contact_info_tr) {
+                contact_info.classList.remove('d-none');
+                more_details.classList.add('d-none');
+                social_info.classList.add('d-none');
+                contact_basic_details.classList.add('d-none');
+            }
         }
     </script>
 
 
 
+    <script>
+        const sender = () => {
+
+            let t = document.querySelector('#divv');
+
+            let parent_div = document.querySelector('#parent_div');
+
+            let div = document.querySelector('#divv');
+
+            let label = document.createElement('label');
+            label.setAttribute('for', 'email_address');
+            label.innerText = 'Email Adress';
+
+            let input = document.createElement('input');
+            input.classList.add('form-control');
+            input.setAttribute('type', 'text');
+            input.setAttribute('id', 'email_address');
+            input.setAttribute('for', 'form-control');
+            input.setAttribute('placeholder', 'email_address');
 
 
+            let section = document.createElement('section');
+            section.classList.add('icon');
+            section.classList.add('d-flex');
+
+            section.style.marginLeft = '300px';
+            section.style.marginTop = '-25px';
+
+            let i_tik = document.createElement('i');
+            i_tik.classList.add('class', 'cancel');
+            i_tik.classList.add('fa-sharp');
+            i_tik.classList.add('fa-solid');
+            i_tik.classList.add('fa-check');
+
+            let i_cross = document.createElement('i');
+            i_cross.classList.add('class', 'cross');
+            i_cross.classList.add('fa-sharp');
+            i_cross.classList.add('fa-solid');
+            i_cross.classList.add('fa-xmark');
+
+            i_cross.classList.add('ms-4');
+
+            section.appendChild(i_tik);
+            section.appendChild(i_cross);
+
+            div.appendChild(label);
+            div.appendChild(input);
+            div.appendChild(section);
+
+            parent_div.appendChild(div);
+            console.log(parent_div);
 
 
+            let cross = document.querySelector('.cross');
+            if (true) {
+                cross.addEventListener('click', () => {
+                    div.remove();
+                });
+            } else {
+                cross.addEventListener('click', () => {
+                    div.add();
+                });
+            }
 
+            // let cancel = document.querySelector('.cancel');
+            // if (true) {
+            //     cancel.addEventListener('click', () => {
+            //         div.save();
+            //     });
+            // } 
+
+        }
+    </script>
 
     <!-- Javascropt link for header, navbar, content and footer style -->
     <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>

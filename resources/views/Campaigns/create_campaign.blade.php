@@ -3,7 +3,6 @@
 <title>Create Campaign</title>
 @endsection
 @section('content')
-
 <!-- Content wrapper start -->
 <div class="content-wrapper">
 
