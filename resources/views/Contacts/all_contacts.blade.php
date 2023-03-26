@@ -138,7 +138,11 @@
                                 <tbody>
                                     <tr class="mb-5">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com <span><i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i></span></td>
+                                        <td class="pb-3" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">sefalibegumimo@gmail.com
+                                            <span>
+                                                <i class="fa-solid fa-pen text-black ms-3 invisible" data-bs-toggle="modal" data-bs-target="#filtering3"></i>
+                                            </span>
+                                        </td>
                                         <td class="pb-3 single_data ">Sefali</td>
                                         <td class="pb-3 single_data ">Begum</td>
                                         <td class="pb-3 single_data ">Ztrios</td>

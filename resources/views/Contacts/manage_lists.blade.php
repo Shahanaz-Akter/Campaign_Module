@@ -89,6 +89,23 @@
                         <!-- Content start-->
                         <div class="container-sm container-md container-lg container-xxl">
 
+
+
+
+
+
+                            <div class="d-flex justify-content-between">
+
+                                <!-- flex child-1 -->
+                                <div class="ms-3 mt-4 mb-5"></div>
+
+                                <!-- flex Child-2 -->
+                                <div class="btn btn-warning mt-4 mb-5" data-bs-toggle="modal" data-bs-target="#filtering2">Create List</div>
+
+                            </div>
+
+
+
                             <table id="example" class="display nowrap" style="width:100%;">
                                 <thead>
                                     <!-- <span class="">10 Contacts are Selected</span> -->
@@ -100,46 +117,86 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="mb-5" onmouseover="Mouse_over()" onmouseout="Mouse_out()">
-                                        <div>
-                                            <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
-                                            <td class="pb-3">My Sample List(4) <br>
-                                                <small>Created on - Mar 25, 2023 12:00 PM</small>
-                                            </td>
-                                            <td class="pb-3">
-                                                <span class="icon_3 invisible"><i class="fa-solid fa-user-plus text-primary ms-5" style="font-size: 18px!important;"></i></span>
-                                                <span class="icon_1 invisible"><i class="fa-regular fa-envelope-open text-primary ms-5" style="font-size: 20px!important;"></i></span>
 
-                                                <span class="icon_2 invisible">
-                                                    <!-- Icon Dropdown -->
-                                                    <div class="btn-group ms-5">
-                                                        <button type="button" class="btn btn-primary btn-icon rounded-pill dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px!important;"><i class="bx bx-dots-vertical-rounded"></i></button>
-                                                        <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a class="dropdown-item" href="">Action</a></li>
-                                                            <li><a class="dropdown-item" href="">Another action</a></li>
-                                                            <li><a class="dropdown-item" href="">Something else here</a></li>
-                                                            <!-- <li>
-                                                                <hr class="dropdown-divider">
-                                                            </li> -->
-                                                            <li><a class="dropdown-item" href="">Separated link</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <!--/ Icon Dropdown -->
-                                                </span>
-                                            </td>
-                                    </tr>
-
-                                    <tr class="mb-5">
+                                    <tr class="mb-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">
                                         <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
                                         <td class="pb-3">My Sample List(4) <br>
                                             <small>Created on - Mar 25, 2023 12:00 PM</small>
                                         </td>
-                                        <td class="pb-3" onmouseover="Mouse_over()" onmouseout="Mouse_out()">
-                                            <span class="icon_3 invisible"><i class="fa-solid fa-user-plus text-primary ms-5" style="font-size: 18px!important;"></i></span>
-                                            <span class="icon_1 invisible"><i class="fa-regular fa-envelope-open text-primary ms-5" style="font-size: 20px!important;"></i></span>
+                                        <td class="pb-3">
+                                            <a class="icon_1 invisible" href="{{url('/add_user')}}"><i class="fa-solid fa-user-plus text-primary ms-5" style="font-size: 25px!important;"></i></a>
+                                            <a class="icon_2 invisible"><i class="fa-regular fa-envelope-open text-primary ms-5" style="font-size: 25px!important;"></i></a>
 
-                                            <span class="icon_2 invisible">
-                                                <i class="fa-solid fa-pen text-black text-primary ms-5" style="font-size: 18px!important;"></i>
+                                            <span class="icon_3 invisible">
+                                                <!-- Icon Dropdown -->
+                                                <div class="btn-group ms-5 mb-2">
+                                                    <div type="button" class="btn-icon rounded-pill dropdown-toggle hide-arrow mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="bx bx-dots-vertical-rounded fs-2"></i>
+                                                    </div>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="">Action</a></li>
+                                                        <li><a class="dropdown-item" href="">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                                                        <li><a class="dropdown-item" href="">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Icon Dropdown -->
+                                            </span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="mb-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3">My Sample List(1) <br>
+                                            <small>Created on - Mar 25, 2023 12:00 PM</small>
+                                        </td>
+                                        <td class="pb-3">
+                                            <span class="icon_1 invisible"><i class="fa-solid fa-user-plus text-primary ms-5" style="font-size: 25px!important;"></i></span>
+                                            <span class="icon_2 invisible"><i class="fa-regular fa-envelope-open text-primary ms-5" style="font-size: 25px!important;"></i></span>
+
+                                            <span class="icon_3 invisible">
+                                                <!-- Icon Dropdown -->
+                                                <div class="btn-group ms-5 mb-2">
+                                                    <div type="button" class="btn-icon rounded-pill dropdown-toggle hide-arrow mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="bx bx-dots-vertical-rounded fs-2"></i>
+                                                    </div>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="">Action</a></li>
+                                                        <li><a class="dropdown-item" href="">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                                                        <li><a class="dropdown-item" href="">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Icon Dropdown -->
+                                            </span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="mb-5" onmouseover="Mouse_over(this)" onmouseout="Mouse_out(this)">
+                                        <td class="pe-3"><input type="checkbox" class="form-check-input dlt_single_message"></td>
+                                        <td class="pb-3">My Sample List(2) <br>
+                                            <small>Created on - Mar 25, 2023 12:00 PM</small>
+                                        </td>
+                                        <td class="pb-3">
+                                            <span class="icon_1 invisible"><i class="fa-solid fa-user-plus text-primary ms-5" style="font-size: 25px!important;"></i></span>
+                                            <span class="icon_2 invisible"><i class="fa-regular fa-envelope-open text-primary ms-5" style="font-size: 25px!important;"></i></span>
+
+                                            <span class="icon_3 invisible">
+                                                <!-- Icon Dropdown -->
+                                                <div class="btn-group ms-5 mb-2">
+                                                    <div type="button" class="btn-icon rounded-pill dropdown-toggle hide-arrow mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="bx bx-dots-vertical-rounded fs-2"></i>
+                                                    </div>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="">Action</a></li>
+                                                        <li><a class="dropdown-item" href="">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                                                        <li><a class="dropdown-item" href="">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Icon Dropdown -->
                                             </span>
                                         </td>
                                     </tr>
@@ -178,41 +235,29 @@
     <!-- Layout wrap1er end -->
 
     <!-- Start filtering1 Modal -->
-    <div class="modal fade" id="filtering1" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="filtering2" tabindex="-1" aria-hidden="true">
         <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
             <div class="modal-content p-3 p-md-5">
                 <div class="modal-body">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                    <div class="title">Assigning a topic to a contact ensures that your contacts receive topic relevant email Campaigns</div>
-
+                    <div class="title fs-2">Create List</div>
+                    <hr>
                     <form class="row g-3">
                         @csrf
-                        <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
-                            <div class="row">
-                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                    <select class="select2 form-select">
-                                        <option value="">Select</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="WV">West Virginia</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
+
 
                         <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9 mt-5 mb-5">
                             <div class="row">
-                                <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
-                                <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                    <input type="text" class="form-control" placeholder="Monu vat khaiso?">
+                                <label class="col-sm-2 col-md-2 col-lg-2 col-xxl-2">Name</label>
+                                <div class="col-sm-10 col-md-10 col-lg-10 col-xxl-10">
+                                    <input type="text" class="form-control" placeholder="Enter List Name">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-12 ms-4 mt-4">
-                            <button type="submit" class="btn btn-primary me-sm-3 me-1">Save</button>
+                            <button type="submit" class="btn btn-warning me-sm-3 me-1">Save</button>
                             <button type="reset" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                         </div>
                     </form>
@@ -229,60 +274,60 @@
         let dlt_single_message = document.querySelectorAll('.dlt_single_message');
         console.log(dlt_single_message);
 
-
         delete_all.addEventListener('change', function() {
             let d_sn = document.querySelector('.d_sn');
-            let tr = d_sn.classList.contains('d-none');
-            console.log(tr);
-            if (tr) {
-                d_sn.classList.remove('d-none');
-
-            } else {
-                d_sn.classList.add('d-none');
-            }
 
             dlt_single_message.forEach(function(val) {
-
                 val.checked = delete_all.checked;
             });
         });
 
+        const Mouse_over = (all_child) => {
+            console.log(all_child.children); //0, 1, 2
+            console.log(all_child.children[2].children); //2 er abar child 3
 
-        const Mouse_over = () => {
+            let child1 = all_child.children[2].children[0];
+            let child2 = all_child.children[2].children[1];
+            let child3 = all_child.children[2].children[2];
 
-            let icon_1 = document.querySelector('.icon_1');
-            console.log(icon_1);
-            let icon_2 = document.querySelector('.icon_2');
-            console.log(icon_2);
-            let icon_3 = document.querySelector('.icon_3');
-            console.log(icon_3);
 
-            if (icon_1.classList.contains('invisible')) {
-                icon_1.classList.remove('invisible');
+            let child1_tr = all_child.children[2].children[0].classList.contains('invisible');
+            let child2_tr = all_child.children[2].children[1].classList.contains('invisible');
+            let child3_tr = all_child.children[2].children[2].classList.contains('invisible');
+
+            if (child1_tr) {
+                all_child.children[2].children[0].classList.remove('invisible');
             }
-            if (icon_2.classList.contains('invisible')) {
-                icon_2.classList.remove('invisible');
+            if (child2_tr) {
+                all_child.children[2].children[1].classList.remove('invisible');
             }
-            if (icon_3.classList.contains('invisible')) {
-                icon_3.classList.remove('invisible');
+            if (child3_tr) {
+                all_child.children[2].children[2].classList.remove('invisible');
             }
         }
 
 
-        const Mouse_out = () => {
+        const Mouse_out = (all_child) => {
+            console.log(all_child.children); //0, 1, 2
+            console.log(all_child.children[2].children); //2 er abar child 3
 
-            let icon_1 = document.querySelector('.icon_1');
-            let icon_2 = document.querySelector('.icon_2');
-            let icon_3 = document.querySelector('.icon_3');
+            let child1 = all_child.children[2].children[0];
+            let child2 = all_child.children[2].children[1];
+            let child3 = all_child.children[2].children[2];
 
-            if (!(icon_1.classList.contains('invisible'))) {
-                icon_1.classList.add('invisible');
+
+            let child1_tr = all_child.children[2].children[0].classList.contains('invisible');
+            let child2_tr = all_child.children[2].children[1].classList.contains('invisible');
+            let child3_tr = all_child.children[2].children[2].classList.contains('invisible');
+
+            if (!(child1_tr)) {
+                all_child.children[2].children[0].classList.add('invisible');
             }
-            if (!(icon_2.classList.contains('invisible'))) {
-                icon_2.classList.add('invisible');
+            if (!(child2_tr)) {
+                all_child.children[2].children[1].classList.add('invisible');
             }
-            if (!(icon_3.classList.contains('invisible'))) {
-                icon_3.classList.add('invisible');
+            if (!(child3_tr)) {
+                all_child.children[2].children[2].classList.add('invisible');
             }
         }
     </script>
@@ -295,7 +340,6 @@
     <script src="{{asset('/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
 
     <script src="{{asset('/assets/vendor/libs/hammer/hammer.js')}}"></script>
-
 
     <script src="{{asset('/assets/vendor/libs/i18n/i18n.js')}}"></script>
     <script src="{{asset('/assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>

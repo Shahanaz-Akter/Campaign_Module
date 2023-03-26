@@ -142,6 +142,10 @@ Route::get('/contact_tags', function () {
 Route::get('/manage_lists', function () {
     return view('Contacts.manage_lists');
 });
+Route::get('/add_user', function () {
+    return view('Contacts.add_user');
+});
+
 Route::get('/manage_topics', function () {
     return view('Contacts.manage_topics');
 });
