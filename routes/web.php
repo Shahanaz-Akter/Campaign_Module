@@ -145,6 +145,9 @@ Route::get('/manage_lists', function () {
 Route::get('/add_user', function () {
     return view('Contacts.add_user');
 });
+Route::get('/contacts', function () {
+    return view('Contacts.contacts');
+});
 
 Route::get('/manage_topics', function () {
     return view('Contacts.manage_topics');
