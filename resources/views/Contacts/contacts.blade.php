@@ -11,7 +11,7 @@
 
         <div class="ms-5">
             <!-- flex child-1 -->
-            <div class="mb-5  text-black">Contacts > ManageLists > MySample > ListAdd > Contacts</div>
+            <div class="mb-5  text-black"></div>
         </div>
 
 
@@ -23,13 +23,8 @@
         <!-- row class start -->
         <div class="mb-5">
 
-            <div class="d-flex justify-content-around">
+            <div>
                 <div class="btn btn-info" onclick="contact_infor()">Contact Info</div>
-                <div class="btn btn-primary" onclick="contact_basic_detail()">Contact Basic Details</div>
-                <div class="btn btn-secondary" onclick="additional_detail()">additional Details</div>
-                <div class="btn btn-primary" onclick="custom_info()">Custom Info</div>
-                <div class="btn btn-warning" onclick="account_info()">Account Info</div>
-                <div class="btn btn-danger" onclick="social_infor()">Social Information</div>
             </div>
             <form action="" method="post">
                 @csrf
@@ -56,6 +51,9 @@
                         </div>
                     </section>
 
+
+                    <div class="btn btn-primary" onclick="contact_basic_detail()">Contact Basic Details</div>
+              
                     <!-- Contact Basic Details-->
                     <section class="mt-4 d-none contact_basic_details">
                         <div class="mb-4">
@@ -106,7 +104,8 @@
                     </section>
 
 
-
+                    <div class="btn btn-secondary" onclick="additional_detail()">additional Details</div>
+               
                     <!-- additional_Info-->
                     <section class="mt-4 d-none additional_Info">
                         <div class="mb-4">
@@ -187,6 +186,7 @@
 
                         </div>
                     </section>
+
 
                     <!-- More Details -->
                     <section class="mt-4 d-none more_details">
@@ -295,6 +295,8 @@
                 </section>
 
 
+            
+                <div class="btn btn-danger" onclick="social_infor()">Social Information</div>
                 <!-- Social Info -->
                 <section class="mt-4 d-none social_info">
                     <div class=" mb-4">
@@ -323,7 +325,7 @@
                     </div>
                 </section>
 
-
+                <div class="btn btn-primary" onclick="custom_info()">Custom Info</div>
                 <!-- custom_Info-->
                 <section class="mt-4 d-none custom_Info">
                     <div class="mb-4">
@@ -339,6 +341,7 @@
                     </div>
                 </section>
 
+                <div class="btn btn-warning" onclick="account_info()">Account Info</div>
 
                 <!-- Account_Info-->
                 <section class="mt-4 d-none account_Info">
@@ -417,30 +420,16 @@
                             </div>
                         </div>
 
-
-
                         <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             This contact has given consent to receive emails relevant to my product
                             </label>
                         </div>
-
-
-                        
-
-
-
-
-
                     </div>
                 </section>
 
         </div>
-
-
-
-
 
         <!-- <hr class="my-4 mx-n4" /> -->
         <div class="pt-4">
