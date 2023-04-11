@@ -146,6 +146,22 @@ Route::get('/add_user', function () {
     return view('Contacts.add_user');
 });
 
+Route::get('/manage_list_contact', function () {
+    return view('Contacts.manage_list_contact');
+});
+
+Route::get('/multiple_contact_list', function () {
+    return view('Contacts.multiple_contact_list');
+});
+
+Route::get('/manage_list_import', function () {
+    return view('Contacts.manage_list_import');
+});
+
+Route::get('/manage_list_signupform', function () {
+    return view('Contacts.manage_list_signupform');
+});
+
 Route::get('/manage_topics', function () {
     return view('Contacts.manage_topics');
 });

@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="btn btn-label-primary mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">
-                        <a href="{{url('/manage_list_create')}}">Import</a>
+                        <a href="{{url('/manage_list_import')}}">Import</a>
                     </div>
 
 
@@ -82,7 +82,7 @@
                     </div>
 
                     <div>
-                        <a class="btn btn-label-primary mb-4 d-none" id="create_new2" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/manage_list_create')}}">Create</a>
+                        <a class="btn btn-label-primary mb-4 d-none" id="create_new2" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/manage_list_signupform')}}">Create</a>
                     </div>
                 </div>
             </div>

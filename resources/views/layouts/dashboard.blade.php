@@ -25,9 +25,6 @@
         </div>
         <!-- code end -->
 
-
-
-
         <!-- Add Modal start -->
         <div class="modal fade" id="search_toggle" tabindex="-1" aria-hidden="true">
             <div class="modal-xl modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">

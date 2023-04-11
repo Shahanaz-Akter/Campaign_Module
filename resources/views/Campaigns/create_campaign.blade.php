@@ -403,7 +403,6 @@
     }
 
 
-
     const mouseOver2 = () => {
 
         let create_over2 = document.querySelector('#create_none2');
@@ -422,8 +421,6 @@
         let create_down2 = document.querySelector('#create_new2');
         create_down2.classList.add('d-none');
     }
-
-
 
 
     const mouseOver3 = () => {

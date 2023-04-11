@@ -171,7 +171,7 @@
                                     <option value="United Arab Emirates">imo@gmail.com</option>
                                 </select>
                                 <div class="h-100" id="parent_div">
-                                    <div class="text-center bg-black text-white" onclick="sender()">Add Sender Address</div>
+                                    <div class="text-center bg-transparent text-primary" onclick="sender()">Add Sender Address</div>
 
                                     <div class="h-50" id="divv">
                                         <!-- Create sender address label and div using JS -->
@@ -232,78 +232,6 @@
 <!-- Content wrapper end -->
 
 <script>
-    const sender = () => {
-
-        let t = document.querySelector('#divv');
-
-        let parent_div = document.querySelector('#parent_div');
-
-        let div = document.querySelector('#divv');
-
-        let label = document.createElement('label');
-        label.setAttribute('for', 'email_address');
-        label.innerText = 'Email Adress';
-
-        let input = document.createElement('input');
-        input.classList.add('form-control');
-        input.setAttribute('type', 'text');
-        input.setAttribute('id', 'email_address');
-        input.setAttribute('for', 'form-control');
-        input.setAttribute('placeholder', 'email_address');
-
-
-        let section = document.createElement('section');
-        section.classList.add('icon');
-        section.classList.add('d-flex');
-
-        section.style.marginLeft = '300px';
-        section.style.marginTop = '-25px';
-
-        let i_tik = document.createElement('i');
-        i_tik.classList.add('class', 'cancel');
-        i_tik.classList.add('fa-sharp');
-        i_tik.classList.add('fa-solid');
-        i_tik.classList.add('fa-check');
-
-        let i_cross = document.createElement('i');
-        i_cross.classList.add('class', 'cross');
-        i_cross.classList.add('fa-sharp');
-        i_cross.classList.add('fa-solid');
-        i_cross.classList.add('fa-xmark');
-
-        i_cross.classList.add('ms-4');
-
-        section.appendChild(i_tik);
-        section.appendChild(i_cross);
-
-        div.appendChild(label);
-        div.appendChild(input);
-        div.appendChild(section);
-
-        parent_div.appendChild(div);
-        console.log(parent_div);
-
-
-        let cross = document.querySelector('.cross');
-        if (true) {
-            cross.addEventListener('click', () => {
-                div.remove();
-            });
-        } else {
-            cross.addEventListener('click', () => {
-                div.add();
-            });
-        }
-
-        // let cancel = document.querySelector('.cancel');
-        // if (true) {
-        //     cancel.addEventListener('click', () => {
-        //         div.save();
-        //     });
-        // } 
-
-    }
-
     const crm_owner_address = () => {
         let crm_owner_address = document.querySelector('.mimi');
         let y = crm_owner_address.classList.contains('d-none');
