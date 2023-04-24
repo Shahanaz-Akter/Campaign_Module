@@ -12,7 +12,13 @@
 
 
      <!-- asset1 css and js -->
-  
+
+
+     <!-- tosat animation -->
+     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/animate-css/animate.css')}}" />
+
+     <!-- Toast css link -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/toastr/toastr.css')}}" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{asset('/assets/img/favicon/favicon.ico')}}" />
@@ -75,9 +81,11 @@
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/nouislider/nouislider.css')}}" /> -->
 
 
-   
+
+
+
     <!-- date range picker -->
-    <link  href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
     <!-- Data table CSS end-->
 
     <!-- export button -->
@@ -140,6 +148,14 @@
         padding: 0;
     }
 
+    .compact::after {
+        content: '';
+        background: blue;
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+    }
+
     .color_org:hover {
         color: #ff7e00 !important;
 
@@ -152,8 +168,11 @@
     }
 
     .h_effect:hover {
-        background: linear-gradient(transparent 100%, #c6d8e6 50%, #c6d8e6 56%, #c6d8e6 80%);
-        border: 2px dashed green;
+        /* background: linear-gradient(transparent 100%, #c6d8e6 50%, #c6d8e6 56%, #c6d8e6 80%); */
+        background: lightcyan;
+        color: black !important;
+        font-weight: bold !important;
+        border: 2px dashed black;
     }
 
 
@@ -267,11 +286,12 @@
     <!-- Core JS -->
 
 
-
+    <!-- Tosat js link -->
+    <link rel="stylesheet" href="{{asset('/assets/vendor/libs/toastr/toastr.js')}}" />
 
 
     <!-- Slider js -->
-    <script src="{{asset('assets/vendor/libs/nouislider/nouislider.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/nouislider/nouislider.js')}}"></script>
 
     <!-- build:js assets/vendor/js/core.js -->
     <script src="{{asset('/assets/vendor/libs/jquery/jquery.js')}}"></script>
@@ -299,9 +319,9 @@
     <script src="{{asset('/assets/vendor/libs/cleavejs/cleave-phone.js')}}"></script>
     <script src="{{asset('/assets/vendor/libs/moment/moment.js')}}"></script>
     <!-- Dropzone js -->
-    <script src="{{asset('../../assets/vendor/libs/dropzone/dropzone.js')}}"></script>
+    <script src="{{asset('/assets/vendor/libs/dropzone/dropzone.js')}}"></script>
     <!-- Page JS -->
-    <script src="../../assets/js/forms-file-upload.js"></script>
+    <script src="{{asset('/assets/js/forms-file-upload.js')}}"></script>
 
 
     <!-- for data tables -->
@@ -311,9 +331,42 @@
     <!-- <script src="https://cdn.datatables.net/select/1.5.0/js/dataTables.select.min.js"></script> -->
     <!-- for data tables end -->
 
+    <!-- Form Repeater start-->
+    <script src="{{asset('/assets/vendor/libs/jquery-repeater/jquery-repeater.js')}}"></script>
+    <!-- Form Repeater end-->
+    <script>
+        var formRepeater = $(".form-repeater");
+
+        var row = 2;
+        var col = 1;
+        formRepeater.on('submit', function(e) {
+            e.preventDefault();
+        });
+        formRepeater.repeater({
+            show: function() {
+                var fromControl = $(this).find('.form-control, .form-select');
+                var formLabel = $(this).find('.form-label');
+
+                fromControl.each(function(i) {
+                    var id = 'form-repeater-' + row + '-' + col;
+                    $(fromControl[i]).attr('id', id);
+                    $(formLabel[i]).attr('for', id);
+                    col++;
+                });
+
+                row++;
+
+                $(this).slideDown();
+            },
+            hide: function(e) {
+                confirm('Are you sure you want to delete this element?') && $(this).slideUp(e);
+            },
+
+        });
+    </script>
+
 
     <!-- extra part er JS -->
-    <script src="{{asset('/assets/vendor/libs/jquery-repeater/jquery-repeater.js')}}"></script>
     <script src="{{asset('/assets/js/forms-extras.js')}}"></script>
     <!-- Tagify -->
     <script src="{{asset('/assets/vendor/libs/tagify/tagify.js')}}"></script>
@@ -656,7 +709,7 @@
 
 
 
-    <SCRIPT>
+    <script>
         const sender = () => {
 
             let t = document.querySelector('#divv');
@@ -728,7 +781,14 @@
             // } 
 
         }
-    </SCRIPT>
+    </script>
+
+
+
+    <!-- multiple selection js link -->
+    <script>
+        $(".select2").select2();
+    </script>
 
 </body>
 

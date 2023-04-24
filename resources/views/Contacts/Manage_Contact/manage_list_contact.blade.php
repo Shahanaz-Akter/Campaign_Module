@@ -9,12 +9,6 @@
     <!-- Content start-->
     <div class="container-xxl flex-grow-1 container-p-y">
 
-
-
-        <!-- <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" title="<i class='bx bx-bell bx-xs' ></i> <span>This is a Tooltip</span>">
-            Mimi
-        </button> -->
-
         <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
             @csrf
 
@@ -26,9 +20,10 @@
                         <!--Contact Info-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#contact_info" aria-expanded="true" aria-controls="collapseDeliveryAddress">Contact Info*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="contact_info()">Contact Info*</button>
                             </h2>
-                            <div id="contact_info" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+
+                            <div id="contact_info" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
                                     <div class="row g-3">
                                         <div class="col-md-6">
@@ -57,9 +52,10 @@
                         <!--Contact Basic Details*-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#contact_basic_details" aria-expanded="true" aria-controls="collapseDeliveryAddress">Contact Basic Details*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="contact_basic_deatils()">Contact Basic Details*</button>
                             </h2>
-                            <div id="contact_basic_details" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+
+                            <div id="contact_basic_deatils" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
 
                                     <div class="row g-3">
@@ -120,9 +116,9 @@
                         <!--Additional Details*-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#additional_details" aria-expanded="true" aria-controls="collapseDeliveryAddress">Additional Details*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="additional_details()">Additional Details*</button>
                             </h2>
-                            <div id="additional_details" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+                            <div id="additional_details" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
 
                                     <div class="row g-3">
@@ -199,9 +195,9 @@
                         <!--Social Info-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#social_info" aria-expanded="true" aria-controls="collapseDeliveryAddress">Social Info*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="social_info()">Social Info*</button>
                             </h2>
-                            <div id="social_info" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+                            <div id="social_info" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
                                     <div class="row g-3">
                                         <div class="col-md-6">
@@ -238,9 +234,9 @@
                         <!--Custom Info-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#custom_info" aria-expanded="true" aria-controls="collapseDeliveryAddress">Custom Info*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="custom_info()">Custom Info*</button>
                             </h2>
-                            <div id="custom_info" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+                            <div id="custom_info" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-lg-12 col-xxl-12 text-center">
@@ -257,9 +253,9 @@
                         <!--Account Info-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#account_info" aria-expanded="true" aria-controls="collapseDeliveryAddress">Account Info*</button>
+                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDeliveryAddress" onclick="account_info()">Account Info*</button>
                             </h2>
-                            <div id="account_info" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
+                            <div id="account_info" class="accordion-collapse collapse show d-none" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-lg-12 col-xxl-12">
@@ -287,6 +283,11 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
 
 
                         <!--others-->
@@ -537,6 +538,79 @@
     });
 </script>
 
+<script>
+    const contact_info = () => {
+        let CI = document.querySelector('#contact_info');
+        console.log(CI);
+        let CIT = CI.classList.contains('d-none');
+        if (CIT) {
+            CI.classList.remove('d-none');
+        } else {
+            CI.classList.add('d-none');
 
+        }
+    }
+
+
+
+    const contact_basic_deatils = () => {
+        let CBD = document.querySelector('#contact_basic_deatils');
+        console.log(CBD);
+        let CBDT = CBD.classList.contains('d-none');
+        if (CBDT) {
+            CBD.classList.remove('d-none');
+        } else {
+            CBD.classList.add('d-none');
+
+        }
+    }
+
+    const additional_details = () => {
+        let AD = document.querySelector('#additional_details');
+        console.log(AD);
+        let ADT = AD.classList.contains('d-none');
+        if (ADT) {
+            AD.classList.remove('d-none');
+        } else {
+            AD.classList.add('d-none');
+
+        }
+    }
+    const social_info = () => {
+        let SI = document.querySelector('#social_info');
+        console.log(SI);
+        let SIT = SI.classList.contains('d-none');
+        if (SIT) {
+            SI.classList.remove('d-none');
+        } else {
+            SI.classList.add('d-none');
+
+        }
+    }
+
+    const custom_info = () => {
+        let CI = document.querySelector('#custom_info');
+        console.log(CI);
+        let CIT = CI.classList.contains('d-none');
+        if (CIT) {
+            CI.classList.remove('d-none');
+        } else {
+            CI.classList.add('d-none');
+
+        }
+    }
+
+    const account_info = () => {
+        let AI = document.querySelector('#account_info');
+        console.log(AI);
+        let AIT = AI.classList.contains('d-none');
+        if (AIT) {
+            AI.classList.remove('d-none');
+        } else {
+            AI.classList.add('d-none');
+
+        }
+    }
+</script>
 
 @endsection

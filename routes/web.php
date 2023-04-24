@@ -150,19 +150,38 @@ Route::get('/contacts', function () {
 });
 
 Route::get('/manage_list_contact', function () {
-    return view('Contacts.manage_list_contact');
+    return view('Contacts.Manage_Contact.manage_list_contact');
 });
 
 Route::get('/multiple_contact_list', function () {
-    return view('Contacts.multiple_contact_list');
+    return view('Contacts.Manage_Contact.multiple_contact_list');
 });
 
 Route::get('/manage_list_import', function () {
-    return view('Contacts.manage_list_import');
+    return view('Contacts.Manage_Contact.managelist_import');
 });
 
-Route::get('/manage_list_signupform', function () {
-    return view('Contacts.manage_list_signupform');
+Route::get('/managelist_selectfile', function () {
+    return view('Contacts.Manage_Contact.Managelist_Selectfile.managelist_selectfile');
+});
+
+Route::get('/manage_list_zoho_crm', function () {
+    return view('Contacts.Manage_Contact.manage_list_zoho_crm');
+});
+
+Route::get('/manage_list_zoho_other_devices', function () {
+    return view('Contacts.Manage_Contact.manage_list_zoho_other_devices');
+});
+
+Route::get('/managelist_signupform', function () {
+    return view('Contacts.Manage_Contact.managelist_signupform');
+});
+
+Route::get('/choose_signup_form', function () {
+    return view('Contacts.Manage_Contact.choose_signup_form');
+});
+Route::get('/untitled_signup_form', function () {
+    return view('Contacts.Manage_Contact.untitled_signup_form');
 });
 
 Route::get('/manage_topics', function () {
