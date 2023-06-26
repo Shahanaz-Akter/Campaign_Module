@@ -17,8 +17,6 @@
         <!-- row class start -->
         <div class="row mb-5">
 
-
-
             <div class="col-md-3 col-lg-3 col-xxl-3 col-sm-3 mb-5 all_campaign ">
                 <div class="h-100 card  text-center" style="border-radius: 1.5rem!important" onmouseover="mouseOver4()" onmouseleave="mouseLeave4()">
                     <div class="card-body">
@@ -64,16 +62,14 @@
                         <p class="card-text d-block" style="color: black;" id="create_none1">Import Your Contacts from other devices.<span class="typcn typcn-warning-outline"></span></p>
                     </div>
 
-<<<<<<< HEAD
                     <div class="btn btn-label-primary mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">
                         <a href="{{url('/manage_list_import')}}">Import</a>
-=======
-                    <div>
-                        <a class="btn btn-label-primary mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">Import</a>
->>>>>>> 7c13ad7e2c71c85bec18b6289842f0e585a01326
+                        <div>
+                            <a class="btn btn-label-primary mb-4 d-none" id="create_new1" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;">Import</a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
 
@@ -93,9 +89,7 @@
                         </p>
                     </div>
                     <div>
-<<<<<<< HEAD
                         <a class="btn btn-label-primary mb-4 d-none" id="create_new2" style="width: 150px!important; margin: 0 auto; border-radius: 1.5rem;" href="{{url('/manage_list_signupform')}}">Create</a>
-=======
                         <div class="btn-group mt-2">
                             <div type="button" class="btn btn-label-primary dropdown-toggle  mb-4 d-none" data-bs-toggle="dropdown" aria-expanded="false" id="create_new5" style="border-radius: 1.5rem;">Sync contacts</div>
                             <ul class="dropdown-menu">
@@ -105,7 +99,6 @@
 
                             </ul>
                         </div>
->>>>>>> 7c13ad7e2c71c85bec18b6289842f0e585a01326
                     </div>
                 </div>
             </div>
@@ -131,60 +124,60 @@
 
         </div>
 
-    </div>
-    <!-- row class end -->
+        <!-- row class end -->
 
-    <!--New Modal start-->
-    <div class="modal fade" id="filtering1" tabindex="-1" aria-hidden="true">
-        <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
-            <div class="modal-content p-3 p-md-5">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                    <h5 class="title text-warning mt-2">Create Campaign</h5>
-                    <hr class="mb-5">
-                    <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
-                        @csrf
+        <!--New Modal start-->
+        <div class="modal fade" id="filtering1" tabindex="-1" aria-hidden="true">
+            <div class="modal-lg modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+                <div class="modal-content p-3 p-md-5">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                        <div id="" class="row g-3" onsubmit="return false">
-                            <div class="row  col-md-10 mb-4 mt-2">
-                                <label class="col-sm-4" for="select2Basic">Campaign Name <span class="text-warning">*</span></label>
-                                <div class="col-sm-8">
-                                    <input type="text" name="campaign_name" class="form-control" id="basic-default-company" placeholder="Enter Campaign Name" />
+                        <h5 class="title text-warning mt-2">Create Campaign</h5>
+                        <hr class="mb-5">
+                        <form action="{{url('/post_create_campaign')}}" method="post" enctype="multipart/form-data">
+                            @csrf
+
+                            <div id="" class="row g-3" onsubmit="return false">
+                                <div class="row  col-md-10 mb-4 mt-2">
+                                    <label class="col-sm-4" for="select2Basic">Campaign Name <span class="text-warning">*</span></label>
+                                    <div class="col-sm-8">
+                                        <input type="text" name="campaign_name" class="form-control" id="basic-default-company" placeholder="Enter Campaign Name" />
+                                    </div>
                                 </div>
-                            </div>
 
 
 
-                            <div class="row  col-md-10 mb-5">
-                                <label class="col-sm-4" for="select2Basic">Topic Name<span class="text-warning">*</span></label>
-                                <div class="col-sm-8">
-                                    <select class="select2 form-select">
-                                        <option value="">Marketing</option>
-                                        <option value="AK">Digital</option>
-                                        <option value="WV">Social</option>
-                                    </select>
+                                <div class="row  col-md-10 mb-5">
+                                    <label class="col-sm-4" for="select2Basic">Topic Name<span class="text-warning">*</span></label>
+                                    <div class="col-sm-8">
+                                        <select class="select2 form-select">
+                                            <option value="">Marketing</option>
+                                            <option value="AK">Digital</option>
+                                            <option value="WV">Social</option>
+                                        </select>
+                                    </div>
                                 </div>
+
+
+                                <div class="col-12  mt-4 ">
+                                    <button type="submit" class="btn btn-warning">Save and Proceed</button>
+
+                                </div>
+
                             </div>
 
-
-                            <div class="col-12  mt-4 ">
-                                <button type="submit" class="btn btn-warning">Save and Proceed</button>
-
-                            </div>
-
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--New Modal end-->
+
     </div>
-
-    <!--New Modal end-->
-
-</div>
-<!-- Content end-->
+    <!-- Content end-->
 </div>
 <!-- Content wrapper end -->
 

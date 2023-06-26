@@ -26,7 +26,7 @@
                         <!--Contact Info-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#contact_info" aria-expanded="true" aria-controls="collapseDeliveryAddress">Contact Info*</button>
+                                <button class="accordion-button color_org" type="button">Contact Info*</button>
                             </h2>
                             <div id="contact_info" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">
@@ -57,7 +57,7 @@
                         <!--Contact Basic Details*-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingDeliveryAddress">
-                                <button class="accordion-button color_org" type="button" data-bs-toggle="collapse" data-bs-target="#contact_basic_details" aria-expanded="true" aria-controls="collapseDeliveryAddress">Contact Basic Details*</button>
+                                <button class="accordion-button color_org" type="button">Contact Basic Details*</button>
                             </h2>
                             <div id="contact_basic_details" class="accordion-collapse collapse show" aria-labelledby="headingDeliveryAddress" data-bs-parent="#collapsibleSection">
                                 <div class="accordion-body">

@@ -297,7 +297,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-lg-3 mb-5 all_campaign12">
+                    <div class="col-md-3 col-lg-3 mb-5 all_campaign">
                         <div class="card h-100 text-center" style="border-radius: 1.5rem!important" onmouseover="mouseOver12()" onmouseleave="mouseLeave12()" data-bs-toggle="modal" data-bs-target="#filtering12">
                             <div class="card-body">
                                 <h5 class="card-title text-primary"><span>Zoho Forms</span></h5>
