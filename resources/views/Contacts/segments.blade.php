@@ -13,7 +13,7 @@
 
             <div style="border: 2px solid red;" class="p-5">
 
-                <div class=""> <a href="{{url('/social')}}"><i class="fas fa-arrow-left" style="font-size: 20px;"></i></a></div><br>
+                <div class=""> <a><i class="fas fa-arrow-left" style="font-size: 20px;">Icon</i></a></div><br>
                 <div class='mb-3 fs-4'><b>Create segments to organize contacts efficiently</b> </div>
                 <br>
                 <div class="btn-group">
