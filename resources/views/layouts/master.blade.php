@@ -11,8 +11,12 @@
     <link rel="canonical" href="https://1.envato.market/frest_admin">
 
 
-     <!-- asset1 css and js -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+     <!-- asset1 css and js -->
 
      <!-- tosat animation -->
      <link rel="stylesheet" href="{{asset('/assets/vendor/libs/animate-css/animate.css')}}" />
@@ -137,6 +141,8 @@
       gtag('config', 'GA_MEASUREMENT_ID');
     </script>
 
+
+
     <!-- Custom notification for demo -->
     <!-- beautify ignore:end -->
 
@@ -238,6 +244,16 @@
         transform: translateY(-0.5rem);
 
     }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+    }
 </style>
 
 </head>
@@ -277,6 +293,8 @@
     <!-- / Layout wrap1er -->
 
 
+    <!-- multi select jquery link -->
+
 
 
     <!-- buy now content with link -->
@@ -285,10 +303,19 @@
   </div> -->
     <!-- Core JS -->
 
-
     <!-- Tosat js link -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/toastr/toastr.js')}}" />
 
+    <!-- multiple selection js link -->
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-submenu a.test').on("click", function(e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
 
     <!-- Slider js -->
     <script src="{{asset('/assets/vendor/libs/nouislider/nouislider.js')}}"></script>
@@ -785,10 +812,17 @@
 
 
 
-    <!-- multiple selection js link -->
+    <!-- 
     <script>
         $(".select2").select2();
-    </script>
+    </script> -->
+
+
+
+
+
+
+
 
 </body>
 

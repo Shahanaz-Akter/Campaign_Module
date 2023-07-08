@@ -9,6 +9,8 @@
     <!-- Content start-->
     <div class="container-xxl flex-grow-1 container-p-y">
 
+        <h5 class="title">Create Segments</h5>
+
         <div class="text-center d-flex justify-content-center text-black">
 
             <div style="border: 2px solid red;" class="p-5">

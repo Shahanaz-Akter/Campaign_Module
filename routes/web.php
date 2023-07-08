@@ -239,3 +239,9 @@ Route::get('/list_based_reports', function () {
 Route::get('/sms_campaign_based_reports', function () {
     return view('Reports.sms_campaign_based_reports');
 });
+
+
+// Segments Route
+Route::get('/segment', function () {
+    return view('Contacts.Segment.segment');
+});
