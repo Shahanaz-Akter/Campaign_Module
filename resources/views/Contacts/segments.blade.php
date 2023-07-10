@@ -13,9 +13,9 @@
 
         <div class="text-center d-flex justify-content-center text-black">
 
-            <div style="border: 2px solid red;" class="p-5">
+            <div style="border: 2px solid blue;" class="p-5">
 
-                <div class=""> <a><i class="fas fa-arrow-left" style="font-size: 20px;">Icon</i></a></div><br>
+                <div class="fs-2"> <a><i class="fas fa-arrow-left" style="font-size: 20px;"></i></a></div><br>
                 <div class='mb-3 fs-4'><b>Create segments to organize contacts efficiently</b> </div>
                 <br>
                 <div class="btn-group">

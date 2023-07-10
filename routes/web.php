@@ -245,3 +245,6 @@ Route::get('/sms_campaign_based_reports', function () {
 Route::get('/segment', function () {
     return view('Contacts.Segment.segment');
 });
+Route::get('/bulk_segment', function () {
+    return view('Contacts.Segment.bulk_segment');
+});
