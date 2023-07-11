@@ -49,7 +49,7 @@
 
 
             <!-- Form Repeater -->
-            <div class="row mb-3  d-none boltu_pa">
+            <div class="row mb-3  d-none boltur_pa">
                 <label class="col-sm-2 col-lg-2 col-xxl-2 text-sm-end mt-4" for="" style="font-weight:500;">Criteria Pattern : </label>
                 <div class="col-sm-12 col-lg-9 col-xxl-9 form-repeater ">
 
@@ -341,6 +341,14 @@
                                 </div>
                             </div>
 
+                            <div class="mb-3 col-lg-3 col-xl-3 col-12 mb-0">
+                                <div type="" class="btn btn-label-primary me-sm-2 me-1" onclick="repeat_class()"> Add
+                                    <i class="bx bx-plus"></i>
+                                </div>
+                            </div>
+
+
+
                         </section>
 
 
@@ -358,10 +366,8 @@
 
     <div class="pt-4 d-flex justify-content-center gap-2">
 
-        <div type="" class="btn btn-label-primary me-sm-2 me-1" onclick="repeat_class()"> Add
-            <i class="bx bx-plus"></i>
-        </div>
-        <div type="" class="btn btn-primary me-sm-2 me-1">Save</div>
+
+        <div type="submit" class="btn btn-primary me-sm-2 me-1">Save</div>
         <a href="{{url('/segments')}}" class="">
             <div type="reset" class="btn btn-label-primary">Cancel</div>
         </a>
@@ -370,15 +376,8 @@
 
     </form>
 
-
-
-
-
 </div>
 <!-- Content end-->
-
-
-
 
 <script>
     const repeat_class = () => {
@@ -408,11 +407,11 @@
     }
 
     const additional_criteria = () => {
-        let boltu_pa = document.querySelector('.boltu_pa');
-        if (boltu_pa.classList.contains('d-none')) {
-            boltu_pa.classList.remove('d-none')
+        let boltur_pa = document.querySelector('.boltur_pa');
+        if (boltur_pa.classList.contains('d-none')) {
+            boltur_pa.classList.remove('d-none')
         } else {
-            boltu_pa.classList.add('d-none')
+            boltur_pa.classList.add('d-none')
 
         }
 

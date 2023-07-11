@@ -297,7 +297,7 @@
                                             <div class="row">
                                                 <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
                                                 <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                                    <input type="text" class="form-control" placeholder="Monu vat khaiso?">
+                                                    <input type="text" class="form-control" placeholder="">
                                                 </div>
                                             </div>
                                         </div>
@@ -342,7 +342,7 @@
                                             <div class="row">
                                                 <label class="col-sm-3 col-md-3 col-lg-3 col-xxl-3" for="select2">Choose Topic</label>
                                                 <div class="col-sm-9 col-md-9 col-lg-9 col-xxl-9">
-                                                    <input type="text" class="form-control" placeholder="Monu vat khaiso?">
+                                                    <input type="text" class="form-control" placeholder="">
                                                 </div>
                                             </div>
                                         </div>

@@ -248,3 +248,7 @@ Route::get('/segment', function () {
 Route::get('/bulk_segment', function () {
     return view('Contacts.Segment.bulk_segment');
 });
+
+Route::get('/manage_topics', function () {
+    return view('Manage_topics.manage_topics');
+});
