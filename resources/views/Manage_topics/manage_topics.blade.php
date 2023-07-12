@@ -49,7 +49,7 @@
 </div>
 
 
-<!-- Start add topic Modal -->
+<!-- Start edit topic Modal -->
 <div class="modal fade" id="edit_topic" tabindex="-1" aria-hidden="true">
     <div class="modal-lg modal-dialog">
         <div class="modal-content p-3 p-md-5">
@@ -90,15 +90,16 @@
         </div>
     </div>
 </div>
-<!-- End  add topic Modal -->
+<!-- End  edit topic Modal -->
 
-<!-- Start edit topic Modal -->
+<!-- Start add topic Modal -->
 <div class="modal fade" id="add_topic" tabindex="-1" aria-hidden="true">
-    <div class="modal-sm modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
+    <div class="modal-lg modal-dialog">
         <div class="modal-content p-3 p-md-5">
             <div class="modal-body">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="title">Edit Topic</div>
+                <div>Topics is a feature in Zoho Campaigns you can use to let your contacts choose the types of email campaigns they are interested in receiving.</div>
+                <div class="title">Add Topic</div>
 
                 <form class="row g-3">
                     @csrf
@@ -132,7 +133,7 @@
         </div>
     </div>
 </div>
-<!-- End  edit topic Modal -->
+<!-- End  add topic Modal -->
 
 <!-- <script>
     var hideIcon = document.querySelector('.hide_icon');
