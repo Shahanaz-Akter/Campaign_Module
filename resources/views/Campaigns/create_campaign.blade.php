@@ -619,10 +619,6 @@
 
     }
 
-
-
-
-
     const mouseOver12 = () => {
 
         let create_over12 = document.querySelector('#create_none12');

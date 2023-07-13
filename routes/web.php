@@ -242,7 +242,7 @@ Route::get('/sms_campaign_based_reports', function () {
 
 
 // Segments Route
-Route::get('/segment', function () {
+Route::get('/segments', function () {
     return view('Contacts.Segment.segment');
 });
 Route::get('/bulk_segment', function () {
@@ -251,4 +251,25 @@ Route::get('/bulk_segment', function () {
 
 Route::get('/manage_topics', function () {
     return view('Manage_topics.manage_topics');
+});
+Route::get('/sync_services', function () {
+    return view('Sync_services.sync_services');
+});
+
+Route::get('/signup_forms', function () {
+    return view('Signup_form.signup_forms');
+});
+Route::get('/create_signup_forms', function () {
+    return view('Signup_form.create_signup_form');
+});
+
+
+Route::get('/edit_signup_form', function () {
+    return view('Signup_form.edit_signup_form');
+});
+
+
+
+Route::get('/contact_scoring', function () {
+    return view('Contact_scoring.contact_scoring');
 });
