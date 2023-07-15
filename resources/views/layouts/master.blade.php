@@ -155,6 +155,13 @@
         padding: 0;
     }
 
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        /* Additional styles as needed */
+    }
+
     .compact::after {
         content: '';
         background: blue;

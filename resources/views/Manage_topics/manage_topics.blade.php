@@ -96,7 +96,6 @@
 
                     <div class="col-12 ms-4 mt-4 d-flex justify-content-between">
                         <button type="reset" class="btn btn-label-primary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-
                         <button type="submit" class="btn btn-primary me-sm-3 me-1">Save Changes</button>
                     </div>
 
