@@ -255,6 +255,13 @@
         left: 100%;
         margin-top: -1px;
     }
+
+
+
+
+    .bg-light {
+        background-color: #f8f9fa;
+    }
 </style>
 
 </head>
