@@ -268,8 +268,11 @@ Route::get('/edit_signup_form', function () {
     return view('Signup_form.edit_signup_form');
 });
 
-
-
 Route::get('/contact_scoring', function () {
     return view('Contact_scoring.contact_scoring');
+});
+
+
+Route::get('/contact_tags', function () {
+    return view('Contacts.contact_tags');
 });

@@ -12,8 +12,8 @@
         <div class="title mb-2">Contact Scoring</div>
         <hr>
         <div class="d-flex justify-content-start gap-3 p-2">
-            <div><button type="button" class="btn btn-outline-primary" onclick="setup()">Setup</button></div>
-            <div><button type="button" class="btn btn-outline-danger" onclick="score_over_view()">Scores View</button></div>
+            <div><button type="button" class="btn btn-outline-warning" onclick="setup()">Setup</button></div>
+            <div><button type="button" class="btn btn-outline-primary" onclick="score_over_view()">Scores View</button></div>
         </div>
         <hr>
 
@@ -39,15 +39,17 @@
 
         <div class="setup">
 
-            <div class="text-center ">
-                <span>
-                    icon
-                    <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
-                </span>
-                <div>You haven't created any views.</div>
-                <div>To create contacts view click the button below.</div>
-                <br>
-                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#define_contact">Define Contacts</button>
+            <div class="card mb-5 p-5">
+                <div class="text-center">
+                    <span>
+                        icon
+                        <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
+                    </span>
+                    <div>You haven't created any views.</div>
+                    <div>To create contacts view click the button below.</div>
+                    <br>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#define_contact">Define Contacts</button>
+                </div>
             </div>
 
             <div class="card p-5">
@@ -247,9 +249,6 @@
                                     <!-- /Form Repeater -->
                                 </div>
 
-
-
-
                                 <div class="row  col-md-10 mb-4 mt-2">
                                     <label class="col-sm-4" for="">Select Mailing List</label>
                                     <div class="col-sm-8">
@@ -268,7 +267,6 @@
                                         <input type="text" name="" class="form-control " id="" placeholder="Search and Select List" />
                                     </div>
                                 </div>
-
 
                                 <div class="col-12  mt-4 ">
                                     <button type="reset" class="btn btn-label-primary btn-reset me-2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
@@ -1144,7 +1142,4 @@
         }
     }
 </script>
-
-
-
 @endsection
