@@ -18,21 +18,8 @@
         <hr>
 
         <div class="score_over_view d-none">
-            <div class="text-center ">
-                <span>
-                    icon
-                    <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
-                </span>
-                <div>You haven't created any views.</div>
-                <div>To create contacts view click the button below.</div>
-                <br>
-                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#define_contact">Define Contacts</button>
-            </div>
-        </div>
 
 
-
-        <div class="setup">
             <div class="card p-5 mb-5">
                 <div>Contact Classification</div>
                 <div class="text-center">
@@ -44,6 +31,23 @@
                     <br>
                     <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#create_view">Create View</button>
                 </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="setup">
+
+            <div class="text-center ">
+                <span>
+                    icon
+                    <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
+                </span>
+                <div>You haven't created any views.</div>
+                <div>To create contacts view click the button below.</div>
+                <br>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#define_contact">Define Contacts</button>
             </div>
 
             <div class="card p-5">
@@ -78,36 +82,35 @@
 
                 <div class="text-left mt-5 ms-4 ps-5">Custom Rule</div>
                 <div class="text-center mb-3">
-
                     <span>
                         icon
                         <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
                     </span>
-                    <div>Create a custom rule for contacts that will be applicable to all the campaigns. You can choose to disable the custom rule for a specific campaign at the time of it's creation.</div>
+                    <div>Create a custom rule for contacts that will be applicable to all the campaigns.
+                        <br>
+                        You can choose to disable the custom rule for a specific campaign at the time of it's creation.</div>
                     <br>
-
                     <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#create_custom_rules">Create Custom Rules</button>
-
                 </div>
+            </div>
 
-
+            <div class="card p-5 mt-5 mb-5">
+                <div>Field Based Scoring Details</div>
+                <div class="text-center">
+                    <span>
+                        icon
+                        <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
+                    </span>
+                    <div>Assign scores to contact based on contact field data such as phone number, country, etc.</div>
+                    <br>
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#configure_now">Configure Now</button>
+                </div>
             </div>
 
         </div>
 
 
-        <div class="card p-5 mt-5 mb-5">
-            <div>Field Based Scoring Details</div>
-            <div class="text-center">
-                <span>
-                    icon
-                    <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
-                </span>
-                <div>Assign scores to contact based on contact field data such as phone number, country, etc.</div>
-                <br>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#configure_now">Configure Now</button>
-            </div>
-        </div>
+
 
         <!-- create view modal start -->
         <div class="modal fade" id="create_view" tabindex="-1" aria-hidden="true">
@@ -502,151 +505,102 @@
                     <div class="modal-body">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                        <h5 class="title mt-2">Create View</h5>
+                        <h5 class="title mt-2">Contact Classification</h5>
                         <hr class="mb-5">
                         <form action="{{url('')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div id="" class="row g-3" onsubmit="return false">
 
-                                <div class="row  col-md-10 mb-4 mt-2">
-                                    <label class="col-sm-3" for="">Name</label>
-                                    <div class="col-sm-9">
+
+                                <div class="row  col-md-11 mb-4 mt-2">
+                                    <label class="col-sm-5" for="">Contacts</label>
+                                    <div class="col-sm-5">
+                                        <label class="" for="">Total Score</label>
+
+                                    </div>
+                                </div>
+
+                                <div class="row  col-md-11 mb-4 mt-2">
+                                    <label class="col-sm-3" for="">Most Engaged</label>
+                                    <div class="col-sm-8">
                                         <input type="text" name="" class="form-control" id="basic-default-company" placeholder="Enter a Name for Your Reference" />
                                     </div>
                                 </div>
 
-                                <div class="row col-md-10 mb-4 mt-2">
-                                    <label class="col-sm-3" for="">When Score is use</label>
+
+                                <div class="row  col-md-11 mb-4 mt-2">
+                                    <label class="col-sm-3" for="">Progressing</label>
                                     <div class="col-sm-4">
-                                        <select class="form-select">
-                                            <option value=""> = </option>
-                                            <option value=""> = = </option>
-                                            <option value=""> => </option>
-                                            <option value="">
-                                                <= </option> <option value="">
-                                                    <<>>
-                                            </option>
-                                        </select>
+                                        <input type="text" name="" class="form-control" id="basic-default-company" placeholder="00" />
                                     </div>
-                                    <div class="col-sm-5">
-                                        <input type="text" name="" class="form-control" id="basic-default-company" placeholder="Enter Score Value" />
-                                    </div>
-                                </div>
-
-                                <div class="row col-md-10 mb-4 mt-2">
-                                    <label class="col-sm-3" for="">Scoring Period</label>
-                                    <div class="col-sm-9">
-
-                                        <select class="form-select">
-                                            <option value="all time">all time</option>
-                                            <option value="">last seven days</option>
-                                            <option value="">last month</option>
-                                            <option value="">
-                                                last three months< /option> <option value="">
-                                                    last six months
-                                            </option>
-                                            <option value="">
-                                                custom range
-                                            </option>
-                                            <option value="">
-                                                is before
-                                            </option>
-                                            <option value="">
-                                                is after
-                                            </option>
-                                            <option value="">
-                                                is between
-                                            </option>
-                                            <option value="">
-                                                is not between
-                                            </option>
-                                        </select>
+                                    to
+                                    <div class="col-sm-4">
+                                        <input type="text" name="" class="form-control" id="basic-default-company" placeholder="00" />
 
                                     </div>
                                 </div>
 
-                                <div class="row col-md-10 mb-2 mt-2">
+
+                                <div class="row  col-md-11 mb-2 mt-2">
+
                                     <label class="col-sm-3" for=""></label>
-                                    <div class="col-sm-9">
-                                        <div onclick="add_contact_criteria(this)"> Add Contact criteria</div>
+                                    <div class="col-sm-4">
+                                        <input type="checkbox" name="" class="me-2" id="" onclick="enable_div()" />
+                                        <label class="" for="">Score in last</label>
                                     </div>
                                 </div>
 
-                                <!-- Form Repeater -->
-                                <div class="col-md-12 mb-4 mt-2 row add_criteria d-none">
-                                    <label class="col-sm-3 mt-4" for="" style="">Criteria</label>
-
-                                    <div class="col-md-9 mt-2 row" style="margin-right: 20px;">
-                                        <div class="add_pa">
-                                            <section class="add_ch row">
-
-                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-3">
-                                                    <label class="form-label" for=""></label>
-
-                                                    <select id="" class="form-select">
-                                                        <option value="Designer">None</option>
-                                                        <option value="Developer">Developer</option>
-                                                        <option value="Tester">Tester</option>
-                                                        <option value="Manager">Manager</option>
-                                                    </select>
-
-                                                </div>
-
-                                                <div class="mb-3 col-md-3 col-lg-3 col-xl-3"> <label class="form-label" for=""></label>
-
-                                                    <select id="" class="form-select">
-                                                        <option value="Designer">None</option>
-                                                        <option value="Developer">Developer</option>
-                                                        <option value="Tester">Tester</option>
-                                                        <option value="Manager">Manager</option>
-                                                    </select>
-                                                </div>
-
-
-                                                <div class="mb-3 col-md-4 col-lg-4 col-xl-4"> <label class="form-label" for=""></label>
-                                                    <input type="text" id="" class="form-control  border  border-2 border-primary" placeholder="Your Name" />
-                                                </div>
-
-                                                <div class="mb-3 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center dlt1" onclick="dlt(this)">
-                                                    <div class="mt-4">
-                                                        <i class="bx bx-x fs-1 text-danger"></i>
-                                                    </div>
-                                                </div>
-
-                                            </section>
-
-
-                                            <!-- </section> -->
-
-                                        </div>
-
+                                <div class="row  col-md-11 mb-4 mt-1">
+                                    <label class="col-sm-3" for=""></label>
+                                    <!-- disabled -->
+                                    <div class="col-sm-6 ">
+                                        <select class="form-select enable_div" disabled>
+                                            <option value="None">Select</option>
+                                            <option value="">15 Days</option>
+                                            <option value="">1 Months</option>
+                                            <option value="">2 Months</option>
+                                            <option value="">3 Months</option>
+                                            <option value="">4 Months</option>
+                                            <option value="">5 Months</option>
+                                            <option value="">6 Months</option>
+                                            <option value="">1 Year</option>
+                                        </select>
                                     </div>
-                                    <div class="mt-3 mb-5">
-                                        <label class="" for=""></label>
-                                        <div class="btn btn-label-primary me-sm-2 me-1" onclick="repeat_class()"> Add
-                                            <i class="bx bx-plus"></i>
+                                </div>
+
+                                <section class="thus d-none">
+                                    <div class="row  col-md-11 mb-4 mt-2">
+                                        <label class="col-sm-3" for="">OR</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="" class="form-control" id="basic-default-company" placeholder="" />
                                         </div>
                                     </div>
-                                    <!-- /Form Repeater -->
-                                </div>
 
+                                    <div class="row  col-md-11 mb-4 mt-2">
+                                        <label class="col-sm-3" for=""></label>
+                                        <div class="col-sm-4">
+                                            <input type="text" name="" class="form-control" id="basic-default-company" placeholder="00" />
+                                        </div>
+                                        to
+                                        <div class="col-sm-4">
+                                            <input type="text" name="" class="form-control" id="basic-default-company" placeholder="00" />
 
-
-
-                                <div class="row  col-md-10 mb-4 mt-2">
-                                    <label class="col-sm-4" for="">Select Mailing List</label>
-                                    <div class="col-sm-8">
-                                        <input type="radio" name="all" class="" id="" checked />
-                                        <label class="" for="">All Mailing List</label>
-
-                                        <input class="ms-3" type="radio" name="all" class="" id="" placeholder="" onclick="specific_mail()" />
-                                        <label class="" for="">Specific Mailing List</label>
+                                        </div>
                                     </div>
+                                </section>
+
+                                <div class="row  col-md-11 mb-4 mt-2">
+                                    <label class="col-sm-3" for=""> Getting started
+                                    </label>
+
+                                    <label class="col-sm-8" for=""> Contacts not meeting these criteria will be categorized as getting started
+                                    </label>
                                 </div>
 
 
-                                <div class="row  col-md-10 mb-4 mt-2 specific_mail d-none">
-                                    <label class="col-sm-4" for=""></label>
+
+                                <div class="row  col-md-11 mb-4 mt-2 specific_mail d-none">
+                                    <label class="col-sm-3" for=""></label>
                                     <div class="col-sm-8">
                                         <input type="text" name="" class="form-control " id="" placeholder="Search and Select List" />
                                     </div>
@@ -1134,11 +1088,6 @@
     });
 </script>
 
-
-
-
-
-
 <script>
     function incrementValue(element) {
         var input = element.parentNode.parentNode.querySelector('input');
@@ -1152,10 +1101,6 @@
         }
     }
 </script>
-
-
-
-
 <script>
     const repeat_class1 = () => {
         let add_pa1 = document.querySelector('.add_pa1');
@@ -1179,6 +1124,27 @@
         parent1.parentNode.removeChild(parent1);
 
     }
+
+
+    const enable_div = () => {
+        var enable_div = document.querySelector('.enable_div');
+        var thus = document.querySelector('.thus');
+
+
+        let tr = enable_div.hasAttribute("disabled");
+        console.log(tr);
+        if (enable_div.hasAttribute("disabled")) {
+
+            enable_div.removeAttribute("disabled");
+            thus.classList.remove('d-none');
+
+        } else {
+            enable_div.setAttribute("disabled", "");
+            thus.classList.add('d-none');
+        }
+    }
 </script>
+
+
 
 @endsection
