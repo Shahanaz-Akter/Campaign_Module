@@ -155,6 +155,25 @@
         padding: 0;
     }
 
+
+
+
+    /* color sector css code */
+    .color-circle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        /* Additional styles as needed */
+    }
+
     .compact::after {
         content: '';
         background: blue;
