@@ -263,16 +263,42 @@ Route::get('/create_signup_forms', function () {
     return view('Signup_form.create_signup_form');
 });
 
-
 Route::get('/edit_signup_form', function () {
     return view('Signup_form.edit_signup_form');
 });
-
 Route::get('/contact_scoring', function () {
     return view('Contact_scoring.contact_scoring');
 });
 
-
 Route::get('/contact_tags', function () {
     return view('Contacts.contact_tags');
+});
+Route::get('/ecommerce', function () {
+    return view('Ecommerce.ecommerce');
+});
+
+Route::get('/sent_campaigns', function () {
+    return view('Reportss.sent_campaigns');
+});
+
+Route::get('/google_analytics', function () {
+    return view('Reportss.google_analytics');
+});
+
+Route::get('/campaigns_based_report', function () {
+    return view('Reportss.campaigns_based_report
+    ');
+});
+
+Route::get('/list_based_report', function () {
+    return view('Reportss.list_based_report
+
+    ');
+});
+
+Route::get('/sms_campaigns_based_report', function () {
+    return view('Reportss.sms_campaigns_based_report
+
+
+    ');
 });

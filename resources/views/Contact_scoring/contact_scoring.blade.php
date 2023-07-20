@@ -90,7 +90,8 @@
                     </span>
                     <div>Create a custom rule for contacts that will be applicable to all the campaigns.
                         <br>
-                        You can choose to disable the custom rule for a specific campaign at the time of it's creation.</div>
+                        You can choose to disable the custom rule for a specific campaign at the time of it's creation.
+                    </div>
                     <br>
                     <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#create_custom_rules">Create Custom Rules</button>
                 </div>
@@ -110,9 +111,6 @@
             </div>
 
         </div>
-
-
-
 
         <!-- create view modal start -->
         <div class="modal fade" id="create_view" tabindex="-1" aria-hidden="true">
@@ -142,8 +140,9 @@
                                             <option value=""> = = </option>
                                             <option value=""> => </option>
                                             <option value="">
-                                                <= </option> <option value="">
-                                                    <<>>
+                                                <= </option>
+                                            <option value="">
+                                                <<>>
                                             </option>
                                         </select>
                                     </div>
@@ -161,8 +160,9 @@
                                             <option value="">last seven days</option>
                                             <option value="">last month</option>
                                             <option value="">
-                                                last three months< /option> <option value="">
-                                                    last six months
+                                                last three months< /option>
+                                            <option value="">
+                                                last six months
                                             </option>
                                             <option value="">
                                                 custom range
@@ -831,7 +831,8 @@
                                             </div>
 
                                             <div class="col-sm-5">
-                                                <input type="text" name="" class="form-control" id="" placeholder="This is for your own Reference" value="" /> </div>
+                                                <input type="text" name="" class="form-control" id="" placeholder="This is for your own Reference" value="" />
+                                            </div>
 
                                             <div class="mb-3 col-lg-1 col-xl-1 col-12 d-flex align-items-center dlt1" onclick="dlt1(this)">
                                                 <div class="mt-1">
@@ -953,7 +954,8 @@
                                             </div>
 
                                             <div class="col-sm-5">
-                                                <input type="text" name="" class="form-control" id="" placeholder="This is for your own Reference" value="" /> </div>
+                                                <input type="text" name="" class="form-control" id="" placeholder="This is for your own Reference" value="" />
+                                            </div>
 
                                             <div class="mb-3 col-lg-1 col-xl-1 col-12 d-flex align-items-center dlt1" onclick="dlt1(this)">
                                                 <div class="mt-1">

@@ -107,7 +107,7 @@
 
 
                                 <div class="col-12  mt-4  d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary">Create</button>
+                                    <button type="submit" class="btn btn-primary">Create</button>
 
                                     <button type="reset" class="btn btn-label-primary btn-reset me-2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                                 </div>
@@ -123,18 +123,6 @@
 
     </div>
 </div>
-
-
-<script>
-    const mosha = () => {
-
-
-    }
-</script>
-
-
-
-
 
 
 @endsection

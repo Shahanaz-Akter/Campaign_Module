@@ -92,60 +92,79 @@
     <!-- date range picker -->
     <link rel="stylesheet" href="{{asset('/assets/vendor/libs/flatpickr/flatpickr.css')}}" />
     <!-- Data table CSS end-->
-
-    <!-- export button -->
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>   -->
-
-    <!-- Helpers -->
-    <script src="{{asset('/assets/vendor/js/helpers.js')}}"></script>
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-
-    <!-- Setting Icon -->
-    <!-- <script src="{{asset('/assets/vendor/js/template-customizer.js')}}"></script> -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{asset('/assets/js/config.js')}}"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-
-    <!-- multi select -->
-    <link rel="stylesheet" href="multiselect/jquery.multiselect.css">
-
-    <!-- multi file-upload select -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
-    const dropzoneMulti = new Dropzone('#dropzone-multi', {
-    previewTemplate: previewTemplate,
-    parallelUploads: 1,
-    maxFilesize: 5,
-    addRemoveLinks: true
-    });
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
     </script>
-
-    <script>
-     const myDropzone = new Dropzone('#dropzone-basic', {
-    previewTemplate: previewTemplate,
-    parallelUploads: 1,
-    maxFilesize: 5,
-    addRemoveLinks: true,
-    maxFiles: 1
-    });
-    </script>
- 
-    <!-- jquery -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-
-
-
     <!-- Custom notification for demo -->
     <!-- beautify ignore:end -->
+
+<!-- Data tables2 css-->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+
+
+<!-- export button -->
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css"/>   -->
+
+<!-- Helpers -->
+<script src="{{asset('/assets/vendor/js/helpers.js')}}"></script>
+<!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+<!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+
+<!-- Setting Icon -->
+<!-- <script src="{{asset('/assets/vendor/js/template-customizer.js')}}"></script> -->
+<!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+<script src="{{asset('/assets/js/config.js')}}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+
+<!-- multi select -->
+<link rel="stylesheet" href="multiselect/jquery.multiselect.css">
+
+<!-- multi file-upload select -->
+<script>
+    const dropzoneMulti = new Dropzone('#dropzone-multi', {
+        previewTemplate: previewTemplate,
+        parallelUploads: 1,
+        maxFilesize: 5,
+        addRemoveLinks: true
+    });
+</script>
+
+<script>
+    const myDropzone = new Dropzone('#dropzone-basic', {
+        previewTemplate: previewTemplate,
+        parallelUploads: 1,
+        maxFilesize: 5,
+        addRemoveLinks: true,
+        maxFiles: 1
+    });
+</script>
+
+<!-- jquery -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+
+
+
+<!-- Custom notification for demo -->
+<!-- beautify ignore:end -->
 
 <style>
     *,
@@ -837,12 +856,30 @@
         }
     </script>
 
-
-
-    <!-- 
-    <script>
+    <!-- <script>
         $(".select2").select2();
     </script> -->
+    <!-- Data tables2 Jquery-->
+    <script>
+        $(document).ready(function() {
+            $('#example1').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        });
+    </script>
+
+    <!-- Data tables2 Js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
 
 
 
