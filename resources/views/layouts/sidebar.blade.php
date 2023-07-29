@@ -116,11 +116,11 @@
 
             <ul class="menu-sub">
 
-                <li id="auto_responders" class="menu-item new_customer">
+                <!-- <li id="auto_responders" class="menu-item new_customer">
                     <a href="{{url('/auto_responders')}}" class="menu-link">
                         <div>Auto Responders</div>
                     </a>
-                </li>
+                </li> -->
 
                 <li id="workflows" class="menu-item new_customer">
                     <a href="{{url('/workflows')}}" class="menu-link">

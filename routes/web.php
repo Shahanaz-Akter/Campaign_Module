@@ -223,21 +223,21 @@ Route::get('/workflow_templates', function () {
 });
 
 
-// Reports Route
-Route::get('/campaign_based_reports', function () {
-    return view('Reports.campaign_based_reports');
+// Reportss Route
+Route::get('/campaign_based_Reportss', function () {
+    return view('Reportss.campaign_based_Reportss');
 });
 Route::get('/google_analytics', function () {
-    return view('Reports.google_analytics');
+    return view('Reportss.google_analytics');
 });
-Route::get('/campaign_based_reports', function () {
-    return view('Reports.campaign_based_reports');
+Route::get('/campaign_based_Reportss', function () {
+    return view('Reportss.campaign_based_Reportss');
 });
-Route::get('/list_based_reports', function () {
-    return view('Reports.list_based_reports');
+Route::get('/list_based_Reportss', function () {
+    return view('Reportss.list_based_Reportss');
 });
-Route::get('/sms_campaign_based_reports', function () {
-    return view('Reports.sms_campaign_based_reports');
+Route::get('/sms_campaign_based_Reportss', function () {
+    return view('Reportss.sms_campaign_based_Reportss');
 });
 
 
@@ -278,27 +278,77 @@ Route::get('/ecommerce', function () {
 });
 
 Route::get('/sent_campaigns', function () {
-    return view('Reportss.sent_campaigns');
+    return view('Reportsss.sent_campaigns');
 });
 
 Route::get('/google_analytics', function () {
-    return view('Reportss.google_analytics');
+    return view('Reportsss.google_analytics');
 });
 
 Route::get('/campaigns_based_report', function () {
-    return view('Reportss.campaigns_based_report
+    return view('Reportsss.campaigns_based_report
     ');
 });
 
 Route::get('/list_based_report', function () {
-    return view('Reportss.list_based_report
+    return view('Reportsss.list_based_report
 
     ');
 });
 
 Route::get('/sms_campaigns_based_report', function () {
-    return view('Reportss.sms_campaigns_based_report
+    return view('Reportsss.sms_campaigns_based_report');
+});
 
 
-    ');
+// Libraries part
+Route::get('/images', function () {
+    return view('Libraries.images');
+});
+Route::get('/upload_from_computer1', function () {
+    return view('Libraries.upload_from_computer1');
+});
+Route::get('/attachments', function () {
+    return view('Libraries.attachments');
+});
+Route::get('/email_templates', function () {
+    return view('Libraries.email_templates');
+});
+Route::get('/form_templates', function () {
+    return view('Libraries.form_templates');
+});
+
+Route::get('/predesigned_templates1', function () {
+    return view('Libraries.predesigned_templates_1');
+});
+Route::get('/workflow_templates', function () {
+    return view('Libraries.workflow_templates');
+});
+
+// Automation part
+Route::get('/auto_responders', function () {
+    return view('Automation.auto_responders');
+});
+Route::get('/workflows', function () {
+    return view('Automation.workflows');
+});
+Route::get('/create_workflows', function () {
+    return view('Automation.create_workflows');
+});
+
+// Reportss part
+Route::get('/campaigns_based_report', function () {
+    return view('Reportss.campaigns_based_report');
+});
+Route::get('/google_analytics', function () {
+    return view('Reportss.google_analytics');
+});
+Route::get('/list_based_report', function () {
+    return view('Reportss.list_based_report');
+});
+Route::get('/sent_campaigns', function () {
+    return view('Reportss.sent_campaigns');
+});
+Route::get('/sms_campaigns_based_report', function () {
+    return view('Reportss.sms_campaigns_based_report');
 });

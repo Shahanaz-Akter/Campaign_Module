@@ -19,7 +19,7 @@
                 <div></div>
                 <div class="text-center mb-5" style="font-size: 25px;">
                     <span class="mb-2">
-                        Icon
+                    <i class="fa fa-folder text-warning" style="font-size: 100px;"></i>
                         <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
                     </span>
                     <div class="fs-4 mb-2">No campaigns are available in this view.</div>

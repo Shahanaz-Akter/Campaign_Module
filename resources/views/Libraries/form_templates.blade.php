@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-<title>Images</title>
+<title>Form Templates</title>
 @endsection
 @section('content')
 <!-- Content wrapper start -->
@@ -10,7 +10,7 @@
     <div class="container-xxl flex-grow-1 container-p-y">
 
         <div class="d-flex justify-content-between" style="font-size: 25px;">
-            <div class="title mb-2">Images</div>
+            <div class="title mb-2">Form Templates</div>
             <div></div>
         </div>
 
@@ -21,48 +21,24 @@
                     <i class="fa fa-folder text-warning" style="font-size: 100px;"></i>
                     <!-- <i class="far fa-adjust" style="font-size: 50px;"></i> -->
                 </span>
-                <div class="fs-4 mb-2">Create image gallery</div>
+                <div class="fs-4 mb-2">Create Form Templates</div>
 
-                <div class="fs-4">Your own repository where you can save images used on regular basis</div>
+                <div class="fs-4">Save your designed signup forms as templates for future uses</div>
 
 
 
                 <div class="demo-inline-spacing">
                     <div class="btn-group">
-                        <div type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Upload</div>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{url('/upload_from_computer1')}}">From Computer</a></li>
-                            <li><a class="dropdown-item" href="" type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="modal" type="button" class="btn btn-warning dropdown-toggle" data-bs-target="#web_url">From web URL</a></li>
-                            <hr class="dropdown-divider">
+                        <a href="{{url('/predesigned_templates1')}}">
+                            <div type="button" class="btn btn-warning" aria-expanded="false">Create Form Template</div>
+                        </a>
 
-                            <li><a class="dropdown-item" href="javascript:void(0);">Separated Link</a></li>
-                        </ul>
                     </div>
 
                 </div>
 
             </div>
         </div>
-
-
-
-        <div class="mb-3 ms-5">New Collection(10)</div>
-        <div class="row mb-2 mb-5">
-            <!-- src="assets_topmost/images/small-logo.png" -->
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-            <div class="col-12 col-md-3 col-lg-3 col-xl-3"><img src="assets/img/products/2.png" alt="Not available"></div>
-
-        </div>
-
-
-
-
     </div>
 </div>
 
